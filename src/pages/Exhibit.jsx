@@ -66,7 +66,7 @@ const Exhibit = () => {
           </div>
         </div>
         <div
-          className="text-sm flex flex-col text-gray-200 items-center md:text-lg font-bold bg-red-500 md:w-[70%] w-full relative m-auto border-2 border-gray-200"
+          className="text-sm flex flex-col text-gray-200 items-center md:text-lg font-bold bg-red-500 md:w-[70%] w-full relative m-auto border-2 border-gray-200 md:mt-10"
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="1000"
@@ -74,12 +74,11 @@ const Exhibit = () => {
           <p className="text-xl my-2">Live in-person:</p>
           <AiOutlineCalendar className="scale-150 my-2" />
           <p>
-            <i>Date</i>: 30<sup>th</sup> - 31<sup>th</sup> August
+            <i>Date</i>: 30<sup>th</sup> - 31<sup>th</sup> August, 2023
           </p>
           <CiLocationOn className="scale-150 my-2" />
           <p className="text-center font-bold px-2">
-            <i>Venue</i>: Abuja Continental Hotel, popularly known as Sheraton,
-            Abuja, Nigeria.
+            <i>Venue</i>: Nicon Luxury Hotel, Abuja, Nigeria
           </p>
           <div className="flex gap-10 items-center justify-center mb-5 mt-10 w-full text-gray-200">
             <div>
@@ -478,12 +477,11 @@ const Exhibit = () => {
           <p className="text-xl my-2">Live in-person:</p>
           <AiOutlineCalendar className="scale-150 my-2" />
           <p>
-            <i>Date</i>: 30<sup>th</sup> - 31<sup>th</sup> August
+            <i>Date</i>: 30<sup>th</sup> - 31<sup>th</sup> August, 2023
           </p>
           <CiLocationOn className="scale-150 my-2" />
           <p className="text-center font-bold px-2">
-            <i>Venue</i>: Abuja Continental Hotel, popularly known as Sheraton,
-            Abuja, Nigeria.
+            <i>Venue</i>: Nicon Luxury Hotel, Abuja, Nigeria
           </p>
           <div className="flex gap-10 items-center justify-center mb-5 mt-10 w-full text-gray-200">
             <div>
@@ -518,7 +516,7 @@ const Exhibit = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-16 my-10 md:my-10 md:gap-5 md:px-5 md:py-16 p-5 tracking-wider font-bold cursor-pointer w-full">
+        <div className="flex flex-col md:flex-row md:justify-between gap-16 my-10 md:my-10 md:gap-5 md:px-5 md:py-16 p-5 tracking-wider font-bold cursor-pointer w-full">
           <div
             className="flex flex-col items-center"
             data-aos="fade-left"

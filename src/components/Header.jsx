@@ -23,8 +23,8 @@ const Header = () => {
     toggleLinksFalse,
   } = useContext(myContextApi);
   return (
-    <div className="top-0 z-50 fixed w-full">
-      <div className="flex justify-between shadow-md md:flex md:items-center  md:justify-between md:w-full md:z-20 md:px-5 bg-slate-100">
+    <div className="top-0 z-50 fixed md:relative w-full">
+      <div className="flex justify-between md:justify-around shadow-md md:flex md:items-center md:w-full md:z-20 md:px-5 bg-slate-100">
         <figure
           className={`${
             showNavlinks ? "hidden" : "flex"
@@ -33,16 +33,16 @@ const Header = () => {
           <img
             src="favicon.png"
             alt="AMWE Official Logo"
-            className="w-[30%] md:w-[50%] md:h-full shadow-lg"
+            className="w-[30%] md:w-[30%] md:h-full shadow-lg"
           />
           <figcaption
-            className="w-[250px]  h-11 p-1 md:h-auto md:text-sm md:font-normal md:p-1  md:block md:outline md:outline-offset-2 text-[10px] text-center leading-tight mt-1 bg-red-500 text-gray-200 rounded overflow-hidden"
+            className="w-[250px] md:w-auto  h-11 p-1 md:h-auto md:font-normal md:p-1  md:block md:outline md:outline-offset-2 text-[8px] text-center leading-tight mt-1 bg-red-500 text-gray-200 rounded overflow-hidden"
             data-aos="flip-up"
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
             All Africa Medical & Wellness Expo <hr />{" "}
-            <i className="text-[8px] md:text-[10px]">
+            <i className="text-[8px]">
               Where the world decides the future of healthcare
             </i>
           </figcaption>
@@ -50,9 +50,9 @@ const Header = () => {
 
         <div className="w-full md:w-[70%] relative">
           {!showNavlinks && (
-            <figure className="md:hidden relative float-right mr-5 mt-12  ">
-              <GiHamburgerMenu
-                className="text-[#0F2F63] text-2xl md:hidden border shadow-lg rounded scale-150"
+            <figure className="md:hidden relative float-right mr-5 mt-10  ">
+              <GiHamburgerMenu size={40}
+                className="text-[#0F2F63] text-2xl md:hidden border shadow-lg rounded"
                 onClick={toggleNavlinks}
               />
             </figure>

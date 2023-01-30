@@ -26,8 +26,7 @@ import { CiLocationOn } from "react-icons/ci"
 import {BsArrowRight} from "react-icons/bs"
 
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import "aos/dist/aos.css"; 
 AOS.init();
 
 const Home = () => {
@@ -37,32 +36,32 @@ const Home = () => {
     {
       id: 1,
       url: slide1,
-      caption: "Venue: Abuja Continental Hotel",
+      caption: "Venue: Nicon Luxury Hotel, Abuja, Nigeria",
     },
     {
       id: 2,
       url: slide2,
-      caption: "From our gallery of previous participations",
+      caption: "The African biggest event of the year",
     },
     {
       id: 3,
       url: slide3,
-      caption: "From our gallery of previous participations",
+      caption: "The African biggest event of the year",
     },
     {
       id: 4,
       url: slide4,
-      caption: "From our gallery of previous participations",
+      caption: "The African biggest event of the year",
     },
     {
       id: 5,
       url: slide5,
-      caption: "From our gallery of previous participations",
+      caption: "The African biggest event of the year",
     },
     {
       id: 6,
       url: slide6,
-      caption: "From our gallery of previous participations",
+      caption: "The African biggest event of the year",
     },
   ];
 
@@ -98,7 +97,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative mt-32 w-full">
+    <div className="relative mt-32 md:mt-0 w-full">
       <section className="">
         <div className="w-full h-full relative  overflow-hidden ">
           {slides.map((slide, index) => (
@@ -107,9 +106,13 @@ const Home = () => {
               className={index === currentIndex ? "slide current" : "slide "}
             >
               {index === currentIndex && (
-                <div className="w-4/4">
-                  <figure className="w-full border bg-cyan-800">
-                    <img src={slide.url} className="w-full md:h-full h-auto" alt="sliders"/>
+                <div className="w-4/4 md:-mt-16 ">
+                  <figure className="w-full border">
+                    <img
+                      src={slide.url}
+                      className="w-full md:h-screen h-auto"
+                      alt="sliders"
+                    />
                   </figure>
                   <figcaption className="mt-2 text-center text-[#0F2F63]">
                     {slide.caption}
@@ -170,12 +173,11 @@ const Home = () => {
             <p className="text-xl my-2">Live in-person:</p>
             <AiOutlineCalendar className="scale-150 my-2" />
             <p>
-              <i>Date</i>: 30<sup>th</sup> - 31<sup>th</sup> August
+              <i>Date</i>: 30<sup>th</sup> - 31<sup>th</sup> August, 2023
             </p>
             <CiLocationOn className="scale-150 my-2" />
             <p className="text-center font-bold px-2">
-              <i>Venue</i>: Abuja Continental Hotel, popularly known as
-              Sheraton, Abuja, Nigeria.
+              <i>Venue</i>: Nicon Luxury Hotel, Abuja, Nigeria
             </p>
             <div className="flex gap-10 items-center justify-center mb-5 mt-10 w-full text-gray-200">
               <div>

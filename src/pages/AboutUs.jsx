@@ -76,12 +76,11 @@ const AboutUs = () => {
         <p className="text-xl my-2">Live in-person:</p>
         <AiOutlineCalendar className="scale-150 my-2" />
         <p>
-          <i>Date</i>: 30<sup>th</sup> - 31<sup>th</sup> August
+          <i>Date</i>: 30<sup>th</sup> - 31<sup>th</sup> August, 2023
         </p>
         <CiLocationOn className="scale-150 my-2" />
         <p className="text-center font-bold px-2">
-          <i>Venue</i>: Abuja Continental Hotel, popularly known as Sheraton,
-          Abuja, Nigeria.
+          <i>Venue</i>: Nicon Luxury Hotel, Abuja, Nigeria
         </p>
         <div className="flex gap-10 items-center justify-center mb-5 mt-10 w-full text-gray-200">
           <div>
