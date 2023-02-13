@@ -9,6 +9,8 @@ import slide5 from "../images/Rotating-picture/slide5.jpg";
 import slide6 from "../images/Rotating-picture/slide6.jpg";
 import whyexhibit from "../images/whyexhibit.jpg";
 
+import Sliders from "../components/Sliders";
+
 import {
   AiFillCaretLeft,
   AiFillCaretRight,
@@ -30,67 +32,6 @@ import "aos/dist/aos.css";
 AOS.init();
 
 const Home = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const slides = [
-    {
-      id: 1,
-      url: slide1,
-      caption: "Venue: Nicon Luxury Hotel, Abuja, Nigeria",
-    },
-    {
-      id: 2,
-      url: slide2,
-      caption: "The African biggest event of the year",
-    },
-    {
-      id: 3,
-      url: slide3,
-      caption: "The African biggest event of the year",
-    },
-    {
-      id: 4,
-      url: slide4,
-      caption: "The African biggest event of the year",
-    },
-    {
-      id: 5,
-      url: slide5,
-      caption: "The African biggest event of the year",
-    },
-    {
-      id: 6,
-      url: slide6,
-      caption: "The African biggest event of the year",
-    },
-  ];
-
-  const goToNext = () => {
-    setCurrentIndex(currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
-  };
-
-  const goToPrev = () => {
-    setCurrentIndex(currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
-  };
-
-  useEffect(() => {
-    setCurrentIndex(0);
-  }, []);
-
-  const autoScroll = true;
-  let slideInterval;
-  let slideIntervalTime = 10000;
-
-  function auto() {
-    slideInterval = setInterval(goToNext, slideIntervalTime);
-  }
-
-  useEffect(() => {
-    if (autoScroll) {
-      auto();
-    }
-    return () => clearInterval(slideInterval);
-  }, [currentIndex]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -98,46 +39,9 @@ const Home = () => {
 
   return (
     <div className="relative mt-32 md:mt-0 w-full">
+      <Sliders />
       <section className="">
-        <div className="w-full h-full relative  overflow-hidden ">
-          {slides.map((slide, index) => (
-            <div
-              key={slide.id}
-              className={index === currentIndex ? "slide current" : "slide "}
-            >
-              {index === currentIndex && (
-                <div className="w-4/4 md:-mt-16 ">
-                  <figure className="w-full border">
-                    <img
-                      src={slide.url}
-                      className="w-full md:h-screen h-auto"
-                      alt="sliders"
-                    />
-                  </figure>
-                  <figcaption className="mt-2 text-center text-[#0F2F63]">
-                    {slide.caption}
-                  </figcaption>
-                </div>
-              )}
-            </div>
-          ))}
-          <div className="absolute w-full h-full">
-            <div className="flex justify-between mt-[-250px] md:mt-[-300px]">
-              <div
-                className="hidden md:block md:text-3xl ml-2 md:ml-10 text-white bg-black/50 rounded-full p-2  "
-                onClick={goToPrev}
-              >
-                <AiFillCaretLeft />
-              </div>
-              <div
-                className="hidden md:block md:text-3xl mr-2 md:mr-10 text-white  bg-black/50 rounded-full p-2"
-                onClick={goToNext}
-              >
-                <AiFillCaretRight />
-              </div>
-            </div>
-          </div>
-        </div>
+        
         <div className="my-5 border-2 shadow-lg outline outline-offset-2  md:p-5 p-3 leading-tight text-gray-900 tracking-widest">
           <h1
             className="md:mb-4 mb-2 pb-4 md:pb-2 md:text-5xl text-3xl font-bold text-[#0F2F63] border-b-2 border-gray-200 relative w-full md:w-[80%] tracking-widest"
@@ -161,7 +65,7 @@ const Home = () => {
             <AiOutlineArrowRight className="mt-1 font-bold" />
           </button>
           <button className="text-gray-200 flex items-center gap-2 py-4 px-6 bg-[#0F2F63] hover:bg-gray-200 hover:text-red-500 hover:translate-x-1 transition-all duration-500 rounded-lg my-5 font-bold">
-            <Link to="#"> Register your interest </Link>
+            <Link to="registration"> Register your interest </Link>
             <AiOutlineArrowRight className="mt-1 font-bold" />
           </button>
           <div

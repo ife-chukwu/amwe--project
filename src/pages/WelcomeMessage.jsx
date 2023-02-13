@@ -7,7 +7,7 @@ const WelcomeMessage = () => {
  }, []);
 
   return (
-    <div className="md:p-10 py-10 px-5 relative md:mt-48  mt-32 md:w-2/3 m-auto">
+    <div className="md:p-10 py-10 px-5 relative md:mt-10  mt-32 md:w-2/3 m-auto">
       <h1 className="md:text-3xl mb-5 font-bold text-center text-2xl text-[#0F2F63]">
         WELCOME MESSAGE
       </h1>
@@ -82,7 +82,7 @@ const WelcomeMessage = () => {
         prevailing situation and trend of things will change for better.
       </p>
       <p>
-        Therefor, <span className="font-bold">AMWE</span> has come to stay and{" "}
+        Therefore, <span className="font-bold">AMWE</span> has come to stay and{" "}
         <span className="font-bold">AMWE 2023</span> is a must attend for all
         who wish to take advantage of the basic opportunities aforementioned.
       </p>

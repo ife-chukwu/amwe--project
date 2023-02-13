@@ -51,7 +51,8 @@ const Header = () => {
         <div className="w-full md:w-[70%] relative">
           {!showNavlinks && (
             <figure className="md:hidden relative float-right mr-5 mt-10  ">
-              <GiHamburgerMenu size={40}
+              <GiHamburgerMenu
+                size={40}
                 className="text-[#0F2F63] text-2xl md:hidden border shadow-lg rounded"
                 onClick={toggleNavlinks}
               />
@@ -92,6 +93,13 @@ const Header = () => {
                       About Us
                     </Link>
                     <Link
+                      to="vissionMission"
+                      className="hover:border-b-2 transition-all duration-300 border-red-500 md:border-b-0 border-b pb-1"
+                      onClick={toggleNavlinks}
+                    >
+                      Our Vision & Mission
+                    </Link>
+                    <Link
                       to="welcomeMessage"
                       className="hover:border-b-2 transition-all duration-300 py-1 border-red-500  md:border-b-0 border-b pb-1"
                       onClick={toggleNavlinks}
@@ -106,7 +114,7 @@ const Header = () => {
                       Our Team
                     </Link>
                     <Link
-                      to="#"
+                      to="reps"
                       className="hover:border-b-2 transition-all duration-300 py-1 border-red-500  md:border-b-0 border-b pb-1"
                       onClick={toggleNavlinks}
                     >

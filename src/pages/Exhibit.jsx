@@ -33,7 +33,7 @@ const Exhibit = () => {
      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
    }, []);
   return (
-    <div className="md:p-10 py-10 px-5 relative md:mt-48  mt-32">
+    <div className="md:p-10 py-10 px-5 relative md:mt-10  mt-32">
       <section>
         <div className="flex flex-col md:flex-row gap-5 md:gap-0 justify-around items-center">
           <figure
