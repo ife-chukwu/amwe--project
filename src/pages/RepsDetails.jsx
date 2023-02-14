@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
 
 import { GoLocation } from "react-icons/go";
@@ -8,6 +8,11 @@ import repsData from "../components/RepsData";
 
 const RepsDetails = () => {
   const { repsDetails } = useParams();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  
   return (
     <div className="mt-32 md:mt-10 md:w-2/3 md:border relative m-auto shadow-2xl">
       {repsData
@@ -36,7 +41,7 @@ const RepsDetails = () => {
                   />{" "}
                   <p className="text-sm mb-1 hover:underline w-[90%]">
                     <a
-                      href="mailto: theonyekagroup@gmail.com"
+                      href="mailto:info@amwe.com.ng"
                       target="_blank"
                       rel="noreferrer"
                     >

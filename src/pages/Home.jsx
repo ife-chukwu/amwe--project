@@ -37,11 +37,12 @@ const Home = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
+  const email_password = 'Mr.UsmanAmwe2023';
+
   return (
     <div className="relative mt-32 md:mt-0 w-full">
       <Sliders />
       <section className="">
-        
         <div className="my-5 border-2 shadow-lg outline outline-offset-2  md:p-5 p-3 leading-tight text-gray-900 tracking-widest">
           <h1
             className="md:mb-4 mb-2 pb-4 md:pb-2 md:text-5xl text-3xl font-bold text-[#0F2F63] border-b-2 border-gray-200 relative w-full md:w-[80%] tracking-widest"
@@ -64,10 +65,12 @@ const Home = () => {
             <Link to="#"> Book a stand</Link>{" "}
             <AiOutlineArrowRight className="mt-1 font-bold" />
           </button>
-          <button className="text-gray-200 flex items-center gap-2 py-4 px-6 bg-[#0F2F63] hover:bg-gray-200 hover:text-red-500 hover:translate-x-1 transition-all duration-500 rounded-lg my-5 font-bold">
-            <Link to="registration"> Register your interest </Link>
-            <AiOutlineArrowRight className="mt-1 font-bold" />
-          </button>
+          <Link to="registration">
+            <button className="text-gray-200 flex items-center gap-2 py-4 px-6 bg-[#0F2F63] hover:bg-gray-200 hover:text-red-500 hover:translate-x-1 transition-all duration-500 rounded-lg my-5 font-bold">
+              Register your interest
+              <AiOutlineArrowRight className="mt-1 font-bold" />
+            </button>
+          </Link>
           <div
             className="text-sm flex flex-col text-gray-200 items-center md:text-lg font-bold bg-red-500 md:w-[70%] w-full relative m-auto border-2 border-gray-200"
             data-aos="fade-up"
@@ -85,7 +88,7 @@ const Home = () => {
             </p>
             <div className="flex gap-10 items-center justify-center mb-5 mt-10 w-full text-gray-200">
               <div>
-                <a href="mailto:amwe2023@gmail.com">
+                <a href="mailto:info@amwe.com.ng">
                   <AiOutlineMail className="scale-150 w-5 h-5 hover:translate-y-1 transition-all duration-500" />
                 </a>
               </div>

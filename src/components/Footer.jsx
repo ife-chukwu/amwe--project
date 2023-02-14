@@ -27,7 +27,7 @@ const Footer = () => {
           </p>
           <p>
             {" "}
-            <a href="mailto:amwe2023@gmail.com">Email: amwe2023@gmail.com</a>
+            <a href="mailto:info@amwe.com.ng">Email: info@amwe.com.ng</a>
           </p>
           <p></p>
           <p></p>

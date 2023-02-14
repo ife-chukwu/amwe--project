@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom';
 
 import repsData from '../components/RepsData'
 
 const Reps = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="relative mt-32 md:mt-0 w-full p-5 md:p-10 md:w-2/3 m-auto">
       <h1 className="font-bold md:text-center text-2xl text-[#0F2F63]">

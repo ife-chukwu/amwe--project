@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Registration = () => {
   const [formInputs, setFormInputs] = useState({
@@ -25,6 +25,10 @@ const Registration = () => {
     e.preventDefault();
     console.log(formInputs);
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="flex flex-col items-center justify-around md:py-10 py-4 md:w-2/3 relative m-auto rounded-t-2xl mt-32 md:mt-10 shadow-2xl ">
       <div className="md:px-10 p-5">

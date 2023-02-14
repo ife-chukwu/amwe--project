@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import vision from "../images/mission&vision/vision.jpeg";
 import mission from "../images/mission&vision/our_mission.jpeg";
 
 
 const VisionMission = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="md:mt-10 mt-32 md:w-2/3 relative m-auto">
       <div className="">

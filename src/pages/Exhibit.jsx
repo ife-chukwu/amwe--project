@@ -82,7 +82,7 @@ const Exhibit = () => {
           </p>
           <div className="flex gap-10 items-center justify-center mb-5 mt-10 w-full text-gray-200">
             <div>
-              <a href="mailto:amwe2023@gmail.com">
+              <a href="mailto:info@amwe.com.ng">
                 <AiOutlineMail className="scale-150 w-5 h-5 hover:translate-y-1 transition-all duration-500" />
               </a>
             </div>
@@ -485,7 +485,7 @@ const Exhibit = () => {
           </p>
           <div className="flex gap-10 items-center justify-center mb-5 mt-10 w-full text-gray-200">
             <div>
-              <a href="mailto:amwe2023@gmail.com">
+              <a href="mailto:info@amwe.com.ng">
                 <AiOutlineMail className="scale-150 w-5 h-5 hover:translate-y-1 transition-all duration-500" />
               </a>
             </div>
