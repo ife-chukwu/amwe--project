@@ -1,6 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Registration = () => {
+  const form = useRef();
+  const [cardId, setCardId] = useState("");
+  const [isFileGood, setIsFileGood] = useState(true);
+
   const [formInputs, setFormInputs] = useState({
     first_name: "",
     last_name: "",
@@ -11,24 +16,70 @@ const Registration = () => {
     email: "",
     country: "Select Country",
     samples_link: "",
-    card_id: "",
-    consent: false
+    consent: false,
   });
 
+  function handleChange(e) {}
+
   const formHandler = (e) => {
+    const { name, value, type, checked } = e.target;
+
     setFormInputs((formInputs) => ({
       ...formInputs,
-      [e.target.name]: e.target.checked ? e.target.checked : e.target.value,
+      [name]: type === "checkbox" ? checked : value,
     }));
+    if (e.target.files[0].size > 31457280) {
+      setIsFileGood(false);
+    } else {
+      setIsFileGood(true);
+
+      setCardId(URL.createObjectURL(e.target.files[0]));
+    }
   };
   const preventD = (e) => {
     e.preventDefault();
-    console.log(formInputs);
+    if (isFileGood) {
+      return true;
+    } else {
+      alert("file is too big");
+      return false;
+    }
+        console.log(formInputs);
+
+    // emailjs
+    //   .send(
+    //     "service_nbmp34k",
+    //     "template_ejfqxh2",
+    //     formInputs,
+    //     "33iZznqtTjQY9gfeI"
+    //   )
+    //   .then(
+    //     function (response) {
+    //       console.log("SUCCESS!", response.status, response.text);
+    //     },
+    //     function (error) {
+    //       console.log("FAILED...", error);
+    //     }
+    //   );
   };
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+
+  const {
+    first_name,
+    last_name,
+    job_title,
+    media_outlet,
+    website,
+    phone,
+    email,
+    country,
+    samples_link,
+    consent,
+  } = formInputs;
+
   return (
     <div className="flex flex-col items-center justify-around md:py-10 py-4 md:w-2/3 relative m-auto rounded-t-2xl mt-32 md:mt-10 shadow-2xl ">
       <div className="md:px-10 p-5">
@@ -46,13 +97,17 @@ const Registration = () => {
       </div>
       <div className="w-full md:w-3/4 p-2">
         <p>Please indicate the required field</p>
-        <form className="bg-[#121212] p-4 mt-4 rounded-lg" onSubmit={preventD}>
+        <form
+          className="bg-[#121212] p-4 mt-4 rounded-lg"
+          onSubmit={preventD}
+          ref={form}
+        >
           <div className="flex flex-col gap-5 justify-between px-2">
             <fieldset className="flex flex-col md:flex-row gap-5 text-gray-800 justify-around flex-wrap">
               <input
                 type="text"
                 placeholder="First Name"
-                value={formInputs.first_name}
+                value={first_name}
                 name="first_name"
                 required
                 className="rounded-lg p-2 bg-transparent border text-gray-200"
@@ -61,7 +116,7 @@ const Registration = () => {
               <input
                 type="text"
                 placeholder="Last Name"
-                value={formInputs.last_name}
+                value={last_name}
                 name="last_name"
                 required
                 className="rounded-lg p-2 bg-transparent border text-gray-200"
@@ -72,7 +127,7 @@ const Registration = () => {
               <input
                 type="text"
                 placeholder="Job Title"
-                value={formInputs.job_title}
+                value={job_title}
                 name="job_title"
                 required
                 className="rounded-lg p-2 bg-transparent border text-gray-200"
@@ -81,7 +136,7 @@ const Registration = () => {
               <input
                 type="text"
                 placeholder="Media Outlet"
-                value={formInputs.media_outlet}
+                value={media_outlet}
                 name="media_outlet"
                 required
                 className="rounded-lg p-2 bg-transparent border text-gray-200"
@@ -92,7 +147,7 @@ const Registration = () => {
               <input
                 type="text"
                 placeholder="Website"
-                value={formInputs.website}
+                value={website}
                 name="website"
                 required
                 className="rounded-lg p-2 bg-transparent border text-gray-200"
@@ -101,7 +156,7 @@ const Registration = () => {
               <input
                 type="number"
                 placeholder="Phone"
-                value={formInputs.phone}
+                value={phone}
                 name="phone"
                 required
                 className="rounded-lg p-2 bg-transparent border text-gray-200"
@@ -112,7 +167,7 @@ const Registration = () => {
               <input
                 type="email"
                 placeholder="Email"
-                value={formInputs.email}
+                value={email}
                 name="email"
                 required
                 className="rounded-lg p-2 bg-transparent border text-gray-200"
@@ -123,7 +178,7 @@ const Registration = () => {
                 required
                 className="rounded-lg p-2 bg-transparent border text-gray-400 md:w-[40%]"
                 onChange={formHandler}
-                value={formInputs.country}
+                value={country}
               >
                 {/* <option value="Select Country" disabled selected>
                   Select Country
@@ -448,13 +503,13 @@ const Registration = () => {
             <input
               type="text"
               placeholder="Link here"
-              value={formInputs.samples_link}
+              value={samples_link}
               name="samples_link"
               required
               className="rounded-lg p-2 bg-transparent border text-gray-200"
               onChange={formHandler}
             />
-            <label htmlFor="card_id" className="text-gray-200">
+            <label htmlFor="cardId" className="text-gray-200">
               For accreditation purposes, please provide a copy of valid press
               credentials issued by your media outlet or locally recognized
               media association. Photographers and videographers covering the
@@ -464,13 +519,17 @@ const Registration = () => {
             <i className="text-gray-200">Max. file size: 30 mb</i>
             <input
               type="file"
-              name="card_id"
+              name="cardId"
               accept=".jpg, .jpeg, .png"
-              value={formInputs.card_id}
               required
               onChange={formHandler}
               className="rounded-lg p-2 bg-transparent border text-gray-200"
             />
+            {cardId && (
+              <figure className="w-[50%] relative m-auto">
+                <img src={cardId} className="w-full h-full rounded-xl" />
+              </figure>
+            )}
             <label
               htmlFor="consent"
               className="flex items-center text-gray-200 gap-4"
@@ -479,9 +538,10 @@ const Registration = () => {
                 type="checkbox"
                 name="consent"
                 required
-                value={formInputs.checked}
+                checked={consent}
                 onChange={formHandler}
                 className="rounded-lg p-2 bg-transparent border text-gray-200"
+                id="consent"
               />
               I consent to this website storing my personal information for
               conference accreditation and future media engagement with AMWE

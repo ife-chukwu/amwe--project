@@ -91,9 +91,9 @@ const WelcomeMessage = () => {
         <br />
         Usman Isah
         <br />
-        <p className="font-bold">
+        <i className="font-bold">
           Founder & CEO All Africa Medical & Wellness Expo LTD
-        </p>
+        </i>
       </p>
       <section className="py-10">
         <h1 className="text-lg">Powered By:</h1>

@@ -141,28 +141,28 @@ const Header = () => {
                     data-aos="fade-down"
                   >
                     <Link
-                      to="#"
+                      to="conference"
                       className="hover:border-b-2 transition-all duration-300 py-1 border-red-500  md:border-b-0 border-b pb-1"
                       onClick={toggleNavlinks}
                     >
                       Conference
                     </Link>
                     <Link
-                      to="#"
+                      to="awards"
                       className="hover:border-b-2 transition-all duration-300 py-1 border-red-500  md:border-b-0 border-b pb-1"
                       onClick={toggleNavlinks}
                     >
                       Awards
                     </Link>
                     <Link
-                      to="#"
+                      to="travel"
                       className="hover:border-b-2 transition-all duration-300 py-1 border-red-500  md:border-b-0 border-b pb-1"
                       onClick={toggleNavlinks}
                     >
                       Travels
                     </Link>
                     <Link
-                      to="#"
+                      to="adverts"
                       className="hover:border-b-2 transition-all duration-300 py-1 border-red-500  md:border-b-0 border-b pb-1"
                       onClick={toggleNavlinks}
                     >
@@ -227,7 +227,7 @@ const Header = () => {
                 className="md:w-1/5 w-[80%] pb-1 md:pb-0 text-gray-200 md:text-center border-b border-red-500 md:border-none flex md:block"
                 onMouseEnter={toggleRegTrue}
               >
-                <Link to="registration">
+                <Link to="registration" onClick={toggleNavlinks}>
                   <button>Registration</button>
                 </Link>
                 {/* {hoverLinks.hoverReg && (

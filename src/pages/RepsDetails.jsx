@@ -16,7 +16,7 @@ const RepsDetails = () => {
   return (
     <div className="mt-32 md:mt-10 md:w-2/3 md:border relative m-auto shadow-2xl">
       {repsData
-        .filter((data) => data.id === repsDetails)
+        .filter((data) => data.name === repsDetails)
         .map((data) => {
           return (
             <div

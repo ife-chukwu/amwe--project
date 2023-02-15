@@ -18,7 +18,7 @@ const Reps = () => {
       <div className="grid md:grid-cols-2 md:place-items-center m-auto gap-3 mt-10 border-t pt-5">
         {repsData.map((data) => (
           <div className="flex gap-5 items-center hover:underline transition-all duration-500 hover:scale-105" key={data.id}>
-            <Link to={data.id} ><h1>{data.country}</h1></Link>
+            <Link to={data.name} ><h1>{data.country}</h1></Link>
             <figure className="w-[50px]">
               <img src={data.country_flag} alt="" />
             </figure>
