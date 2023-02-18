@@ -8,7 +8,7 @@ const WelcomeMessage = () => {
 
   return (
     <div className="md:p-10 py-10 px-5 relative md:mt-10  mt-32 md:w-2/3 m-auto">
-      <h1 className="md:text-3xl mb-5 font-bold text-center text-2xl text-[#0F2F63]">
+      <h1 className="md:hidden mb-5 font-bold text-center text-2xl text-[#0F2F63]">
         WELCOME MESSAGE
       </h1>
       <div className="flex md:items-center md:flex-row flex-col gap-10">
@@ -19,18 +19,23 @@ const WelcomeMessage = () => {
             className="w-full h-full rounded-lg"
           />
         </figure>
-        <p className="md:w-1/2">
-          I am highly excited to welcome you all, first to Africa, a land of
-          diverse cultural heritage and a landmass of hospitality. Secondly, I
-          would like to welcome you to{" "}
-          <span className="font-bold">
-            ALL-AFRICA MEDICAL & WELLNESS EXPO (2023)
-          </span>
-          , the African biggest event. Also, I welcome you to Nigeria, the host
-          of the first edition of this great event; a country highly ranked as
-          one of the topmost hospitality countries, always ready to recieve
-          visitors heartwarmingly.
-        </p>
+        <div className="md:w-1/2 flex flex-col items-center">
+          <h1 className="hidden md:block md:text-2xl mb-5 font-bold text-2xl text-[#0F2F63]">
+            WELCOME MESSAGE
+          </h1>
+          <p className='md:text-center'>
+            I am highly excited to welcome you all, first to Africa, a land of
+            diverse cultural heritage and a landmass of hospitality. Secondly, I
+            would like to welcome you to{" "}
+            <span className="font-bold">
+              ALL-AFRICA MEDICAL & WELLNESS EXPO (2023)
+            </span>
+            , the African biggest event. Also, I welcome you to Nigeria, the
+            host of the first edition of this great event; a country highly
+            ranked as one of the topmost hospitality countries, always ready to
+            recieve visitors heartwarmingly.
+          </p>
+        </div>
       </div>
       <p className="mt-10">
         Our platform is set to receive the world of healthcare together with an

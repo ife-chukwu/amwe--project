@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
 import {
   AiOutlineArrowRight,
@@ -12,20 +12,17 @@ import {
 } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
-   useEffect(() => {
-     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-   }, []);
-  
-  
   return (
     <div className="md:p-10 py-10 px-5 relative md:mt-10  mt-32 md:w-2/3 m-auto">
       <h1 className="md:text-2xl mb-5 font-bold text-center text-xl text-[#0F2F63]">
@@ -59,11 +56,11 @@ const AboutUs = () => {
       </p>
       <div className="flex md:flex-row flex-col md:justify-around md:gap-10 items-center">
         <button className="bg-[#0F2F63] md:w-1/2 w-full flex items-center justify-center gap-5 py-3 md:py-4 text-gray-200 hover:bg-[#0a182f] hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg md:my-5 mt-10 font-bold">
-          Book a stand
+          <Link to="/bookStand">Book a stand</Link>
           <AiOutlineArrowRight className="mt-1 font-bold" />
         </button>
         <button className="text-gray-200 flex items-center justify-center  gap-5 py-3 md:py-4 w-full md:w-1/2 bg-[#0F2F63] hover:bg-[#0a182f] hover:translate-x-1 transition-all duration-500 rounded-lg md:my-5 my-2 font-bold">
-          <Link to="#"> Register your interest </Link>
+          <Link to="/registration"> Register your interest </Link>
           <AiOutlineArrowRight className="mt-1 font-bold" />
         </button>
       </div>
@@ -166,6 +163,6 @@ const AboutUs = () => {
       </section>
     </div>
   );
-}
+};
 
-export default AboutUs
+export default AboutUs;

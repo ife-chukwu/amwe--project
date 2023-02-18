@@ -32,7 +32,7 @@ const VisionMission = () => {
         </figure>
         <div className="mt-2 px-5 md:px-0">
           <li>
-            To make Africa one of the leading healthcare destination globally.
+            To make Africa one of the leading healthcare destinations globally.
           </li>
           <li>
             To develop a sustainable medical & wellness tourism for Nigeria and

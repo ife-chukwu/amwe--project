@@ -37,11 +37,15 @@ const Home = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
-  const email_password = 'Mr.UsmanAmwe2023';
+  
 
   return (
     <div className="relative mt-32 md:mt-0 w-full">
       <Sliders />
+
+      <i className="md:px-5 px-3 text-[10px] md:text-[12px]">
+        Excerpts: IHTF Jordan Event
+      </i>
       <section className="">
         <div className="my-5 border-2 shadow-lg outline outline-offset-2  md:p-5 p-3 leading-tight text-gray-900 tracking-widest">
           <h1
@@ -62,7 +66,7 @@ const Home = () => {
             Where the world decides the future of Healthcare
           </p>
           <button className="text-[#0F2F63] flex items-center gap-2 py-3 px-4 bg-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5 font-bold">
-            <Link to="#"> Book a stand</Link>{" "}
+            <Link to="bookStand"> Book a stand</Link>{" "}
             <AiOutlineArrowRight className="mt-1 font-bold" />
           </button>
           <Link to="registration">
