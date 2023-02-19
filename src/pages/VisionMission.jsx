@@ -17,7 +17,7 @@ const VisionMission = () => {
         </figure>
         <div className="px-5 md:px-0">
           <p className="mt-2">
-            Our <span className="font-bold text-xl">Vision</span> entails
+            Our <span className="font-bold text-xl">Vision</span>; 
             working together with the world of healthcare, key stakeholders and
             governments towards building a healthy healthcare system for all
             Africans.

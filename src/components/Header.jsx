@@ -28,15 +28,15 @@ const Header = () => {
         <figure
           className={`${
             showNavlinks ? "hidden" : "flex"
-          } md:flex md:flex-col items-center md:w-[20%] w-full gap-5 md:gap-1 md:h-100px m-5 md:mr-5 md:mt-2 md:ml-2 relative`}
+          } md:flex md:flex-col items-center md:w-[20%] w-full gap-2 md:gap-1 md:h-100px m-5 md:mr-5 md:mt-2 md:ml-2 relative`}
         >
           <img
             src="favicon.png"
             alt="AMWE Official Logo"
-            className="w-[30%] md:w-[30%] md:h-full shadow-lg"
+            className="w-[20%] md:w-[30%] md:h-full shadow-lg"
           />
           <figcaption
-            className="w-[250px] md:w-auto  h-11 p-1 md:h-auto md:font-normal md:p-1  md:block md:outline md:outline-offset-2 text-[8px] text-center leading-tight mt-1 bg-red-500 text-gray-200 rounded overflow-hidden"
+            className="w-[250px] md:w-auto p-1 md:h-auto md:font-normal md:p-1  md:block md:outline md:outline-offset-2 text-[8px] text-center leading-tight mt-1 bg-red-500 text-gray-200 rounded overflow-hidden"
             data-aos="flip-up"
             data-aos-easing="linear"
             data-aos-duration="1500"
@@ -50,7 +50,7 @@ const Header = () => {
 
         <div className="w-full md:w-[70%] relative">
           {!showNavlinks && (
-            <figure className="md:hidden relative float-right mr-5 mt-10  ">
+            <figure className="md:hidden relative float-right mr-5 mt-6  ">
               <GiHamburgerMenu
                 size={40}
                 className="text-[#0F2F63] text-2xl md:hidden border shadow-lg rounded"

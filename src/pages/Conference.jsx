@@ -117,7 +117,7 @@ const Conference = () => {
         <p className="mt-2">
           Based on the above, the 1ST edition of{" "}
           <span className="font-bold">
-            AMWE, ALL AFRIC MEDICAL & WELLNESS EXPO
+            AMWE, ALL AFRICA MEDICAL & WELLNESS EXPO
           </span>{" "}
           is dedicated to identifying the key challenges denying Africans access
           to quality healthcare and then proffering possible solutions to those
