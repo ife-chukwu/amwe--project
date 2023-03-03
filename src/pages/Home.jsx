@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import slide1 from "../images/Rotating-picture/slide1.jpeg";
@@ -102,7 +102,7 @@ const Home = () => {
                 </a>
               </div>
               <div>
-                <a href="#">
+                <a href="https://youtu.be/RxXA6HZgI_g">
                   <AiFillYoutube className="scale-150 w-5 h-5 hover:translate-y-1 transition-all duration-500" />
                 </a>
               </div>
@@ -300,6 +300,14 @@ const Home = () => {
             </button>
           </div>
         </div>
+        <iframe
+          src="https://www.youtube.com/embed/RxXA6HZgI_g"
+          title="AMWE 2023 ALL AFRICA MEDICAL &amp; WELLNESS EXPO"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          className="md:mt-20 mt-10 md:w-2/3 w-full h-64 md:h-96 relative m-auto rounded-xl"
+        ></iframe>
       </section>
       <section className="p-10">
         <h1 className="text-lg">Powered By:</h1>

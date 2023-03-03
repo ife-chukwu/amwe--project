@@ -121,7 +121,7 @@ const Header = () => {
                       Our Representative
                     </Link>
                     <Link
-                      to="#"
+                      to="contactUs"
                       className="hover:border-b-2 transition-all duration-300 py-1 border-red-500"
                       onClick={toggleNavlinks}
                     >
@@ -169,7 +169,7 @@ const Header = () => {
                       Adverts
                     </Link>
                     <Link
-                      to="#"
+                      to="contactUs"
                       className="hover:border-b-2 transition-all duration-300 py-1 border-red-500  md:border-b-0 border-b pb-1"
                       onClick={toggleNavlinks}
                     >

@@ -538,7 +538,7 @@ const Registration = () => {
               />
               {cardId && (
                 <figure className="w-[50%] relative m-auto">
-                  <img src={cardId} className="w-full h-full rounded-xl" />
+                  <img src={cardId} alt="" className="w-full h-full rounded-xl" />
                 </figure>
               )}
               <label

@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import Home from "./pages/Home"
 import BookStand from "./pages/BookStand"
 import AboutUs from "./pages/AboutUs"
+import ContactUs from "./pages/ContactUs"
 import Reps from "./pages/Reps"
 import RepsDetails from "./pages/RepsDetails"
 import WelcomeMessage from "./pages/WelcomeMessage"
@@ -31,6 +32,7 @@ function App() {
         <Route path="reps" element={<Reps />} />
         <Route path="reps/:repsDetails" element={<RepsDetails />} />
         <Route path="vissionMission" element={<VisionMission />} />
+        <Route path="contactUs" element={<ContactUs />} />
         <Route path="welcomeMessage" element={<WelcomeMessage />} />
         <Route path="exhibit" element={<Exhibit />} />
         <Route path="registration" element={<Registration />} />

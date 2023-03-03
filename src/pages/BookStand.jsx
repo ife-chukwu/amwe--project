@@ -96,21 +96,21 @@ const BookStand = () => {
   };
   const formSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .send(
-        "service_nbmp34k",
-        "template_ynvioaq",
-        standFormInputs,
-        "33iZznqtTjQY9gfeI"
-      )
-      .then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
-    );
+    // emailjs
+    //   .send(
+    //     "service_nbmp34k",
+    //     "template_ynvioaq",
+    //     standFormInputs,
+    //     "33iZznqtTjQY9gfeI"
+    //   )
+    //   .then(
+    //     function (response) {
+    //       console.log("SUCCESS!", response.status, response.text);
+    //     },
+    //     function (error) {
+    //       console.log("FAILED...", error);
+    //     }
+    // );
        setIsFormSubmitted(true);
 
   };
@@ -937,10 +937,6 @@ const BookStand = () => {
       ) : (
         <div
           className="flex md:flex-row flex-col-reverse items-center justify-between md:p-4"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
         >
           <figure className="md:w-1/3 w-full">
             <img src="cartoon.png" alt="" className="hidden md:block" />
