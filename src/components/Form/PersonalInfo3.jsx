@@ -91,12 +91,6 @@ export const PersonalInfo3 = () => {
     healthChild,
     infrastructureChild,
     state3,
-    one,
-    two,
-    three,
-    four,
-    five,
-    six,
   } = useContext(myContextApi);
 
   useEffect(() => {
