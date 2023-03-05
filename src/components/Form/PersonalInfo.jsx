@@ -46,9 +46,9 @@ export const PersonalInfo = () => {
   } = useContext(myContextApi);
 
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0 , behavior: "smooth" });
-  }, [state]);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, left: 0 , behavior: "smooth" });
+  // }, [state]);
 
   const checkBox = [
     {
@@ -162,10 +162,10 @@ export const PersonalInfo = () => {
   ];
 
   return (
-    <div className="w-4/4 ">
+    <div className="w-full ">
       {" "}
       <div className="md:ml-[200px]">
-        <div className="md:ml-[-200px]  mb-10">
+        <div className="md:ml-[-200px]  mb-10 w-full">
           <div className="flex justify-end mr-[30px] md:mr-[66px] mt-5 md:mt-10 ">
             <p className="border-b-8 rounded-l-full border-gray-700 w-[30px] md:w-[50px] "></p>{" "}
             <p className="border-b-8 rounded-r-full border-gray-300 w-[170px] md:w-[250px]"></p>
@@ -175,13 +175,13 @@ export const PersonalInfo = () => {
             </p>
           </div>
 
-          <h1 className="md:ml-[80px] ml-10  text-md text-gray-600 font-bold mt-20">
+          <h1 className="md:ml-[80px] ml-10 text-gray-600 font-bold mt-20 text-lg">
             Personal details
           </h1>
-          <h3 className=" md:ml-[80px] ml-10 mt-10  text-gray-600 md:text-[17px] text-[13px] font-bold w-4/5 md:w-auto">
+          <h3 className=" md:ml-[80px] ml-10 mt-10  text-gray-600 font-bold md:w-auto">
             Personalize your AMWE journey from the beginning.
           </h3>
-          <p className="mt-5 md:ml-[80px] ml-10 text-gray-600  text-[12px] md:text-[15px] md:font-medium font-bold w-4/5  md:w-auto mx-5">
+          <p className="mt-5 md:ml-[80px] ml-10 text-gray-600  md:font-medium font-bold w-4/5  md:w-auto mx-5">
             We encourage you to respond to the below questions accurately so we
             can provide you an experience that is better suited to your needs
             and objectives.
@@ -190,20 +190,22 @@ export const PersonalInfo = () => {
         <form
           ref={form}
           onSubmit={handleDefault}
-          className="text-[13px] text-gray-600 gap-5"
+          className="text-gray-600 gap-5 px-10 md:px-0"
         >
           <div>
             <div className=" md:flex md:flex-row flex flex-col items-center md:gap-3 md:ml-[69px]">
-              <span className="font-semibold text-[14px] md:flex">Title *</span>{" "}
+              <label className="hidden font-semibold text-[14px] md:block">
+                Title *
+              </label>{" "}
               <select
-                className="border  border-gray-400  rounded-lg select-dropdown md:w-[350px] w-[270px] h-10   outline-none mb-5"
+                className="w-full border  border-gray-400  rounded-lg select-dropdown md:w-[350px] h-10   outline-none mb-5"
                 name="status"
                 placeholder="Title"
                 onChange={handleChange1}
                 ref={disable}
                 value={status}
               >
-                <option selected></option>
+                <option selected>Select Title</option>
                 <option value="Mr">Mr</option>
                 <option value="Mrs">Mrs</option>
                 <option value="ms">Ms</option>
@@ -245,7 +247,7 @@ export const PersonalInfo = () => {
                   placeholder="First Name"
                   value={fname}
                   ref={disable2}
-                  className="w-[270px] md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
+                  className="w-full md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
                 />
               </div>
               <p className="flex justify-center  md:ml-[-410px] mt-[-10px] text-[red]">
@@ -263,7 +265,7 @@ export const PersonalInfo = () => {
                   onChange={handleChange3}
                   value={lname}
                   ref={disable3}
-                  className="w-[270px] md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
+                  className="w-full md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
                 />
               </div>
               <p className="flex justify-center md:ml-[-410px] mt-[-10px] text-[red]">
@@ -280,7 +282,7 @@ export const PersonalInfo = () => {
                   onChange={handleChange4}
                   ref={disable4}
                   value={job}
-                  className=" w-[270px] md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
+                  className="w-full md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
                 />
               </div>
               <p className="flex justify-center md:ml-[-410px] mt-[-10px] md:mt-[0] text-[red]">
@@ -297,14 +299,14 @@ export const PersonalInfo = () => {
                   onChange={handleChange5}
                   value={company}
                   ref={disable5}
-                  className="w-[270px] md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
+                  className="w-full md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
                 />
               </div>
               <p className="flex justify-center md:ml-[-410px] mt-[-10px] text-[red]">
                 {valid5}
               </p>
-              <div className="py-5 md:mb-10 ">
-                <p className="md:absolute ml-10 md:mb-10 w-4/5 text-justify md:w-3/5 md:ml-[-190px] font-medium md:text-[15px] md:font-medium ">
+              <div className="py-5 md:mb-10 w-full ">
+                <p className="md:absolute md:mb-10 w-full text-justify md:w-3/5 md:ml-[-190px] font-medium md:text-[15px] md:font-medium ">
                   Please ensure you have entered your correct email address.
                   This is the email address we will use to send your digital
                   badge that gives you access to the online platform and
@@ -322,7 +324,7 @@ export const PersonalInfo = () => {
                   onChange={handleChange6}
                   value={email}
                   ref={disable6}
-                  className=" w-[270px] md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none "
+                  className="w-full md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none "
                 />
               </div>
               <p className="flex justify-center md:ml-[-410px] mt-[-10px] text-[red]">
@@ -339,7 +341,7 @@ export const PersonalInfo = () => {
                   onChange={handleChange7}
                   value={email2}
                   ref={disable7}
-                  className=" w-[270px] md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
+                  className="w-full md:w-[350px] border-gray-400 border rounded-lg py-[10px] px-5 outline-none"
                 />{" "}
               </div>
               <p className="flex justify-center md:ml-[-410px] mt-2 text-[red]">
@@ -347,17 +349,19 @@ export const PersonalInfo = () => {
                 {valid9}
               </p>
               <div className="md:flex md:flex-row flex flex-col mt-[30px] md:gap-5 items-center ">
-                <span className="font-semibold md:text-[14px] w-4/5 mb-5 md:mb-0 md:w-60 md:ml-[-205px]">
+                <span className="font-semibold md:text-[14px] w-full  mb-5 md:mb-0 md:w-60 md:ml-[-205px]">
                   Please indicate primary industry your business operates in: *
                 </span>{" "}
                 <select
-                  className="border  border-gray-400 rounded-lg px-5 w-[270px] md:w-[350px] h-10 outline-none mb-5 md:ml-[-2px]"
+                  className="border  border-gray-400 rounded-lg px-5 w-full  md:w-[350px] h-10 outline-none mb-5 md:ml-[-2px]"
                   name="position"
                   onChange={handleChange8}
                   value={position}
                   ref={disable8}
                 >
-                  <option value="status" selected></option>
+                  <option value="status" selected>
+                    Primary Industry
+                  </option>
                   <option value="Charity/Non-Profit-Organization/NGO">
                     Charity/Non-Profit-Organization/NGO
                   </option>
@@ -412,7 +416,7 @@ export const PersonalInfo = () => {
             <p className="flex justify-center md:ml-[-220px] mt-[-30px] text-[red]">
               {valid8}
             </p>
-            <div className="ml-[50px]">
+            <div className="">
               <p className=" font-semibold w-[350px] md:w-[500px] mt-[70px]">
                 {" "}
                 Please indicate other industries your business operates in:

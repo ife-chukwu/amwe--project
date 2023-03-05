@@ -140,7 +140,7 @@ const BookStand = () => {
       {!isFormSubmitted ? (
         <div className="w-full md:w-3/4 p-2 md:p-0">
           <form
-            className="bg-[#121212] p-4 mt-4 rounded-lg text-gray-200"
+            className="p-4 mt-4 rounded-lg text-gray-800"
             onSubmit={formSubmit}
             ref={form}
           >
@@ -155,7 +155,7 @@ const BookStand = () => {
                   value={email}
                   name="email"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                 />
               </div>
@@ -167,7 +167,7 @@ const BookStand = () => {
                   name="title"
                   value={title}
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                 >
                   {" "}
@@ -212,7 +212,7 @@ const BookStand = () => {
                   value={first_name}
                   name="first_name"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                 />
               </div>
@@ -226,7 +226,7 @@ const BookStand = () => {
                   value={last_name}
                   name="last_name"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                 />
               </div>
@@ -240,7 +240,7 @@ const BookStand = () => {
                   value={job_title}
                   name="job_title"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                 />
               </div>
@@ -254,7 +254,7 @@ const BookStand = () => {
                   value={company_name}
                   name="company_name"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                 />
               </div>
@@ -265,7 +265,7 @@ const BookStand = () => {
                 <select
                   name="org_size"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                   value={org_size}
                 >
@@ -291,7 +291,7 @@ const BookStand = () => {
                   value={city}
                   name="city"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                 />
               </div>
@@ -302,7 +302,7 @@ const BookStand = () => {
                 <select
                   name="country"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                   value={country}
                 >
@@ -637,7 +637,7 @@ const BookStand = () => {
                   value={phone}
                   name="phone"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                 />
               </div>
@@ -651,7 +651,7 @@ const BookStand = () => {
                   value={mobile}
                   name="mobile"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                 />
               </div>
@@ -662,7 +662,7 @@ const BookStand = () => {
                 <select
                   name="job_function"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                   value={job_function}
                 >
@@ -721,7 +721,7 @@ const BookStand = () => {
                 <select
                   name="nature_of_business"
                   required
-                  className="rounded p-2 bg-transparent border-b text-gray-200 md:w-3/5"
+                  className="rounded p-2 bg-transparent border-b text-gray-800 md:w-3/5"
                   onChange={formHandler}
                   value={nature_of_business}
                 >
@@ -788,7 +788,7 @@ const BookStand = () => {
                     />{" "}
                     <label
                       htmlFor="disposables_consumables"
-                      className="p-2 bg-transparent text-gray-200 md:w-3/5"
+                      className="p-2 bg-transparent text-gray-800 md:w-3/5"
                     >
                       Disposables & Consumables
                     </label>
@@ -803,7 +803,7 @@ const BookStand = () => {
                     />{" "}
                     <label
                       htmlFor="healthcare_general_services"
-                      className="rounded p-2 bg-transparent text-gray-200 md:w-3/5"
+                      className="rounded p-2 bg-transparent text-gray-800 md:w-3/5"
                     >
                       Healthcare General Services
                     </label>
@@ -818,7 +818,7 @@ const BookStand = () => {
                     />{" "}
                     <label
                       htmlFor="healthcare_infrastructure_assets"
-                      className="rounded p-2 bg-transparent text-gray-200 md:w-3/5"
+                      className="rounded p-2 bg-transparent text-gray-800 md:w-3/5"
                     >
                       Healthcare Infrastructure Assets
                     </label>
@@ -833,7 +833,7 @@ const BookStand = () => {
                     />{" "}
                     <label
                       htmlFor="it_systems_solutions"
-                      className="rounded p-2 bg-transparent text-gray-200 md:w-3/5"
+                      className="rounded p-2 bg-transparent text-gray-800 md:w-3/5"
                     >
                       IT Systems / Solutions
                     </label>
@@ -848,7 +848,7 @@ const BookStand = () => {
                     />{" "}
                     <label
                       htmlFor="imaging_diagnostics"
-                      className="rounded p-2 bg-transparent text-gray-200 md:w-3/5"
+                      className="rounded p-2 bg-transparent text-gray-800 md:w-3/5"
                     >
                       Imaging Diagnostics
                     </label>
@@ -863,7 +863,7 @@ const BookStand = () => {
                     />{" "}
                     <label
                       htmlFor="laboratory"
-                      className="rounded p-2 bg-transparent text-gray-200 md:w-3/5"
+                      className="rounded p-2 bg-transparent text-gray-800 md:w-3/5"
                     >
                       Laboratory
                     </label>
@@ -878,7 +878,7 @@ const BookStand = () => {
                     />{" "}
                     <label
                       htmlFor="medical_equipment_devices"
-                      className="rounded p-2 bg-transparent text-gray-200 md:w-3/5"
+                      className="rounded p-2 bg-transparent text-gray-800 md:w-3/5"
                     >
                       Medical Equipment Devices
                     </label>
@@ -893,7 +893,7 @@ const BookStand = () => {
                     />{" "}
                     <label
                       htmlFor="orthopedic_physiotherapy_rehabilitation"
-                      className="rounded p-2 bg-transparent text-gray-200 md:w-3/5"
+                      className="rounded p-2 bg-transparent text-gray-800 md:w-3/5"
                     >
                       Orthopedic Physiotherapy Rehabilitation
                     </label>
@@ -908,7 +908,7 @@ const BookStand = () => {
                     />{" "}
                     <label
                       htmlFor="pharma_nutrition"
-                      className="rounded p-2 bg-transparent text-gray-200 md:w-3/5"
+                      className="rounded p-2 bg-transparent text-gray-800 md:w-3/5"
                     >
                       Pharma Nutrition
                     </label>

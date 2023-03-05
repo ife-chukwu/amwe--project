@@ -36,6 +36,10 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+ const conferenceFileUrl = "Conference-Brochure.pdf";
+  const conferenceFileName = "Conference-Brochure.pdf";
+  const sponsorshipFileUrl = "Sponsorship-Brochure.pdf"
+    const sponsorshipFileName = "Sponsorship-Brochure.pdf";
 
   
 
@@ -264,7 +268,7 @@ const Home = () => {
           <div className="md:w-1/3 flex flex-col items-center">
             <figure className="md:w-full md:h-[250px] shadow-lg rounded-tl-2xl rounded-br-2xl md:hover:scale-105 transition-all duration-300">
               <img
-                src="https://marketplace.canva.com/EAFMpe1T88Q/1/0/1600w/canva-blue-modern-dental-clinic-trifold-brochure-O5muq1jXx60.jpg"
+                src="conference.png"
                 alt=""
                 className="w-full h-full rounded-tl-2xl rounded-br-2xl "
               />
@@ -277,13 +281,15 @@ const Home = () => {
               2023, our sponsors and benefits.
             </p>
             <button className="py-2 px-4 bg-red-500 text-gray-200 rounded-md mt-2 hover:bg-red-400 transition-all duration-300">
-              Download
+              <a href={conferenceFileUrl} download={conferenceFileName}>
+                Download File
+              </a>
             </button>
           </div>
           <div className="md:w-1/3 flex flex-col items-center">
             <figure className="md:w-full md:h-[250px] shadow-lg rounded-tr-2xl rounded-bl-2xl md:hover:scale-105 transition-all duration-300">
               <img
-                src="https://marketplace.canva.com/EAE8-qdHVmo/2/0/1600w/canva-blue-clean-medical-promotion-service-trifold-brochure-5lqWs8Yqnr8.jpg"
+                src="sponsorship.png"
                 alt=""
                 className="rounded-tr-2xl rounded-bl-2xl w-full h-full"
               />
@@ -296,7 +302,9 @@ const Home = () => {
               sponsors.
             </p>
             <button className="py-2 px-4 bg-red-500 text-gray-200 rounded-md mt-2 hover:bg-red-400 transition-all duration-300">
-              Download
+              <a href={sponsorshipFileUrl} download={sponsorshipFileName}>
+                Download File
+              </a>
             </button>
           </div>
         </div>

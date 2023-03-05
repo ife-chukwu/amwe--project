@@ -29,17 +29,18 @@ const Registration = () => {
     country,
   } = useContext(myContextApi);
   return (
-    <div>
+    <div className="relative mt-32 md:mt-0 w-full">
       <Link
         to="/mediaRegistration"
-        className="font-bold  hover:text-[#2b2ba2] text-gray-500 flex justify-end mr-20 my-5 underline"
+        className="font-bold text-[#0F2F63] mx-5 md:mx-10 md:mt-5"
       >
-        Media Registration
+        Are your a Media Personel? <br />{" "}
+        <span className="underline mx-5 md:mx-10">Click here to register</span>
       </Link>
       <div
         className={`${
           submit ? "bg-black/40 backdrop-blur-xl " : ""
-        } text-gray-600 w-4/4 h-4/4 overflow-hidden`}
+        } text-gray-600 w-4/4 overflow-hidden`}
         data-aos="fade-up"
         data-aos-duration="2000"
       >
@@ -47,7 +48,7 @@ const Registration = () => {
           <div
             className={`${
               submit ? "md:border-none " : "md:border-gray-300 md:border"
-            }   w-4/4 md:w-3/4  mt-40 flex flex-col justify-center  py-20 rounded-lg`}
+            }   w-full h-auto md:w-3/4 mt-10 flex flex-col justify-center rounded-lg`}
           >
             <div
               className={`mx-5 border  ${
@@ -87,17 +88,17 @@ const Registration = () => {
                 !state ? "flex flex-col " : "hidden"
               }  ml-[80px] md:mt-10 mt-20 mx-5`}
             >
-              <h1 className="font-extrabold md:font-semibold text-gray-600 md:text-lg ml-[-50px] md:ml-0 mx-4 md:mx-0 text-center md:text-start">
+              <h1 className="font-extrabold md:font-semibold text-gray-600 md:text-xl text-lg ml-[-50px] md:ml-0 mx-4 md:mx-0 text-center md:text-start">
                 Welcome to the AMSWE world visitor registration form.
               </h1>
-              <p className="text-[12px] font-medium text-gray-600 mt-7 md:mt-7 text-center md:text-start ml-[-70px] md:ml-0 mx-4 md:mx-0">
+              <p className="font-medium text-gray-600 mt-7 md:mt-7 text-center md:text-start ml-[-70px] md:ml-0 mx-4 md:mx-0">
                 By completing this registration form, you will get you{" "}
                 <strong className="md:text-[14px] font-medium md:font-bold text-gray-700">
                   Free visitors badge
                 </strong>{" "}
                 that gives you access to:
               </p>
-              <ul className="text-gray-600 list-disc text-[12px] mt-5 w-4/5 md:mt-10 font-medium -ml-10 mx-3  md:ml-[50px]">
+              <ul className="text-gray-600 list-disc mt-5 md:mt-10 font-medium -ml-10 mx-3  md:ml-[50px]">
                 <li>The exhibition halls and all exhibiting companies</li>
                 <li>Thousands of products across 9 product sectors</li>
                 <li>Innovative sessions at the Transformation Zone</li>
@@ -110,12 +111,11 @@ const Registration = () => {
                 </li>
               </ul>
 
-              <p className="mt-7 text-[12px] text-gray-600 md:w-[600px] ml-[-50px] md:ml-0 mx-5">
-                Your visitor badge will be digital - available to you through
-                the Arab Health Mobile App (when it goes live) and will be
-                emailed to you in the days before the in-person event. Click the
-                'Register' button below to start your FREE visitor journey to
-                attend Arab Health -{" "}
+              <p className="mt-7 text-gray-600 md:w-[600px] ml-[-50px] md:ml-0 mx-5">
+                Your visitor badge will be digital - available to you on our
+                website and will be emailed to you in the days before the
+                in-person event. Click the 'Register' button below to start your
+                FREE visitor journey to attend AMWE 2023 Event -{" "}
                 <strong>where the world of healthcare meets.</strong>
               </p>
               <ul className="mt-10 md:ml-[50px] gap-5 flex flex-col  -ml-[50px] mx-5 list-disc text-[12px] text-gray-600">
@@ -123,19 +123,13 @@ const Registration = () => {
                   If you are an exhibiting staff member then contact your
                   company's admin to get registered and receive your badge
                 </li>
-                <li>
-                  If you want to attend the paid CME-accredited conferences then
-                  <Link className="mx-1 underline">
-                    contact our delegate sales team
-                  </Link>
-                </li>
               </ul>
               <div className="flex justify-center w-3/4 md:justify-start">
                 <Link to="next1">
                   {" "}
                   <button
                     onClick={hide}
-                    className=" py-2 md:py-2 px-[50px] md:px-10 rounded-lg text-gray-200 md:mt-20 mt-10 bg-[#0F2F63] shadow-md hover:bg-blue-800 transition-all duration-200 shadow-gray-300"
+                    className="py-2 md:py-2 px-[50px] md:px-10 rounded-lg text-gray-200 my-5 bg-[#0F2F63] shadow-md hover:bg-[#0f1e36] transition-all duration-200 shadow-gray-300"
                   >
                     Register
                   </button>
@@ -296,7 +290,7 @@ const Registration = () => {
               within 30 days from the completion of the event.
             </p>
 
-            <ul className="mt-10 bg-[#0F2F63] py-3 px-5 flex flex-col text-[1rem] gap-5  md:flex  md:flex-row md:gap-[55px] text-gray-100">
+            {/* <ul className="mt-10 bg-[#0F2F63] py-3 px-5 flex flex-col text-[1rem] gap-5  md:flex  md:flex-row md:gap-[55px] text-gray-100">
               <li className="underline">
                 <Link>Accessibility</Link>
               </li>
@@ -312,7 +306,7 @@ const Registration = () => {
               <li className="underline">
                 <Link>Visitors terms and conditions</Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

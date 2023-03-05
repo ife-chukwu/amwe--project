@@ -81,16 +81,18 @@ const MediaRegistration = () => {
     consent,
   } = formInputs;
 
-  const email_password = "Mr.UsmanAmwe2023";
-  const SITE_KEY = "6Ld25IUkAAAAACFxbx0PiM3v2-YEaFHv6G4GrTbh";
-  const SECRET_KEY = "6Ld25IUkAAAAAGdP7kZF8QITfZ6JN_2F15zWL1rg";
   return (
-    <div>
-      <div className="flex justify-end underline font-bold mr-20 my-10 hover:text-[#3a3ac3]">
+    <div className="relative mt-32 md:mt-0 w-full">
+      <div className="flex justify-start underline font-bold hover:text-[#3a3ac3]">
         {" "}
-        <Link to="/registration">General Registration</Link>
+        <Link
+          to="/registration"
+          className="font-bold text-[#0F2F63] mx-5 md:mx-10 md:mt-5"
+        >
+          General Registration
+        </Link>
       </div>
-      <div className="flex flex-col items-center justify-around md:py-10 py-4 md:w-2/3 relative m-auto rounded-t-2xl mt-32 md:mt-10 shadow-2xl">
+      <div className="flex flex-col items-center justify-around md:py-10 py-4 md:w-2/3 relative m-auto rounded-t-2xl mt-5 md:mt-10 shadow-2xl">
         {!isFormCorrect && (
           <div className="md:px-10 p-5">
             <h2 className="text-2xl font-bold tracking-widest text-center md:text-start text-[#0F2F63]">
