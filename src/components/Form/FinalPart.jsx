@@ -1,4 +1,4 @@
-import React, { useContext , useEffect} from "react";
+import React, { useContext, useEffect } from "react";
 import { myContextApi } from "../../ContextApi";
 import { BsLinkedin, BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
@@ -19,7 +19,7 @@ export const FinalPart = () => {
         <div
           className={` ${
             submit
-              ? "flex flex-col w-4/5 bg-white shadow-xl shadow-black/90 text-black/70 absolute  md:w-2/4 rounded-lg"
+              ? "flex flex-col absolute bg-white shadow-xl shadow-black/90 text-black/70 w-3/5  rounded-lg"
               : "hidden"
           } `}
         >
@@ -27,88 +27,66 @@ export const FinalPart = () => {
             {" "}
             <AiOutlineClose
               onClick={closeMessage}
-              className="flex md:text-2xl text-xl mt-2 justify-end ml-[140px] md:ml-[340px] w-full"
+              className="flex justify-end w-full h-5 ml-[40%] md:ml-[45%] mt-5 md:h-7"
             />
           </Link>
-          <div className="flex justify-center text-center">
-            <div>
-              <h1 className="font-extrabold md:font-medium md:text-xl mt-5">
-                Let your network know you are attending
-              </h1>
-              <p className="text-[12px] md:text-sm font-medium">
-                #All Africa Medical & Wellness Expo 2023
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-center md:gap-[50px] md:flex-row flex-col-reverse mt-10">
-            <div className="w-4/4 h-4/4 mt-20 font-bold text-[17px]   md:ml-10">
-              <div className="z-40 absolute mt-[-700px] md:mt-0 md:relative">
-                <div className="flex justify-center w-4/4">
-                  <div className="flex flex-col">
-                    <p className="text-center md:w-3/5  text-xl  uppercase sm:text-shadow1 md:font-extrabold  text-white md:text-black/60">
-                      I am attending All Africa Medical & Wellness Expo 2023
-                    </p>
-
-                    <div className="flex justify-center w-4/4 md:w-2/4">
-                      <button className="md:py-2 py-2 w-[200px] shadow-black shadow rounded-lg md:px-8 md:rounded-sm mt-10  md:ml-[65px]    md:mt-10 bg-[#1515af] md:bg-[#0e0e6d] text-sm font-medium md:font-bold text-white">
-                        Join Me
-                      </button>{" "}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="z-40 absolute md:relative  mt-[-500px] md:mt-0 md:mt-7">
-                <p className="font-bold text-xl md:-ml-[40px] uppercase sm:text-shadow1 md:text-black/70 md:4/5 text-white ml-8 text-center text-[14px] w-3/4">
-                  {" "}
-                  All Africa Medical & Wellness Expo 2023
+          <h1 className="font-extrabold md:font-medium md:text-xl text-center mt-5 flex justify-center mx-3">
+            Let your network know you are attending
+          </h1>
+          <p className="text-lg text-center md:text-sm font-medium mb-10 flex justify-center mx-3">
+            #All Africa Medical & Wellness Expo 2023
+          </p>
+          <div className="flex w-full justify-center">
+            <div className="flex-col-reverse flex md:grid md:grid-cols-2 md:gap-10 w-full">
+              <div className="mx-5">
+                <p className="text-center mt-10 font-extrabold text-xl text-black/70">
+                  I am attending All Africa Medical & Wellness Expo 2023
                 </p>
-                <p className="text-xl md:-ml-[200px] uppercase sm:text-shadow1 text-center text-white md:text-[#08084b] text-[12px]">
+
+                <button className="text-white flex justify-center w-full shadow-black shadow rounded-lg py-2 md:rounded-sm mt-10  md:mt-10 bg-[#1515af] md:bg-[#0e0e6d] ">
+                  Join Me
+                </button>
+
+                <p className="w-full flex mt-10 font-bold justify-center">
                   By Informer Markets
                 </p>
-                <p className="text-xl md:-ml-[200px] leading-3  font-normal sm:text-shadow1 text-center text-white text-[12px] md:text-[#08084b] ">
+                <p className="w-full flex mt-2 text-center font-bold justify-center">
                   Live in Person: 30th - 31th August
                   <br />
                   Dubai world trade center.
                 </p>
-              </div>
-            </div>
-            <div className="mb-5 mt-10 md:mt-20 md:-ml-[400px]">
-              <p className="w-4/4 flex justify-center md:-ml-[170px] md:mt-[300px] text-[13px] md:text-[16px] text-black/80">
-                Select Where to Share
-              </p>
-              <div className="flex justify-center mt-10 md:mt-[50px] md:-ml-[170px]">
-                <div className="grid grid-cols-3 w-2/4 gap-5 md:gap-7 my-5">
-                  <BsLinkedin className="text-2xl text-[#262696] cursor-pointer" />
-                  <BsFacebook className="text-2xl text-[#262696] cursor-pointer" />
-                  <BsWhatsapp className="text-2xl text-[#262696] cursor-pointer" />
-                  <FaEnvelope className="text-2xl text-[#262696] cursor-pointer" />
-                  <BsTwitter className="text-2xl text-[#262696] cursor-pointer" />
-                  <AiFillInstagram className="text-2xl text-[#262696] cursor-pointer" />
-                </div>
-              </div>
-              <div className=" flex flex-row md:flex-col justify-center ">
-                <div className="flex flex-col">
-                  <button className="text-[11px] md:-ml-[140px] md:w-[200px]  mt-5 border border-black/30 rounded-lg  py-1">
-                    {" "}
-                    Open in Mobile
-                  </button>
-                  <div className="">
-                    <p className="text-[11px] md:-ml-[130px]   text-center mt-3 font-normal">
-                      Powered by Ifechukwu | Privacy
-                    </p>
+
+                <p className="w-full flex mt-5 text-center font-medium text-md border-b justify-center">
+                  Select Where to Share
+                </p>
+                <div className="w-full flex justify-center">
+                  <div className="grid grid-cols-3 w-2/4 gap-5 md:gap-7 my-5">
+                    <BsLinkedin className="text-2xl text-[#262696] cursor-pointer" />
+                    <BsFacebook className="text-2xl text-[#262696] cursor-pointer" />
+                    <BsWhatsapp className="text-2xl text-[#262696] cursor-pointer" />
+                    <FaEnvelope className="text-2xl text-[#262696] cursor-pointer" />
+                    <BsTwitter className="text-2xl text-[#262696] cursor-pointer" />
+                    <AiFillInstagram className="text-2xl text-[#262696] cursor-pointer" />
                   </div>
                 </div>
+                <button className="flex w-full justify-center border rounded-lg mt-10">
+                  Open in Mobile
+                </button>
+                <p className="mt-3 w-full flex text-center justify-center text-sm mb-5">
+                  Powered by Ifechukwu | Privacy
+                </p>
               </div>
-            </div>
 
-            <div className="w-4/4  flex justify-center md:w-2/4  relative">
-              <figure className="md:w-auto md:h-auto md:bg-black/60 bg-black/80 bg-blend-overlay">
-                <img
-                  src="https://images.pexels.com/photos/7583382/pexels-photo-7583382.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="AMWE"
-                  className="w-full h-full md:rounded-tl-4xl mix-blend-overlay "
-                />
-              </figure>
+              <div className="">
+                {" "}
+                <figure className="md:h-full h-[400px] w-full md:bg-black/60 bg-black/80 bg-blend-overlay">
+                  <img
+                    src="https://images.pexels.com/photos/7583382/pexels-photo-7583382.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="AMWE"
+                    className="w-full h-full rounded-tl-lg mix-blend-overlay "
+                  />
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -129,11 +107,11 @@ export const FinalPart = () => {
             </p>
           </div>{" "}
           <div className=" ml-5 md:ml-20 mt-20">
-            <h1 className=" font-bold text-lg text-gray-600 md:w-[500px]">
+            <h1 className=" font-bold text-lg text-gray-600 md:w-4/5">
               Thank you for registering with All Africa Medical & Wellness Expo
               2023
             </h1>
-            <p className=" md:w-[700px] font-semibold text-[14px] mt-5">
+            <p className=" md:w-4/5 font-semibold text-[14px] mt-5">
               You are now confirmed to attend <strong>Arab Health 2023.</strong>
             </p>{" "}
             <p className="mt-5 text-[14px]">
@@ -142,7 +120,7 @@ export const FinalPart = () => {
             <p className={`${submit ? "hidden" : "absolute"} mt-5 text-[14px]`}>
               How can you make the most of Arab Health?
             </p>
-            <ul className="ml-10 w-3/4 md:w-auto md:ml-20 list-disc mt-[60px] gap-4 flex flex-col font-normal text-[14px]">
+            <ul className="ml-10 w-3/4  md:w-4/5 md:ml-20 list-disc mt-[60px] gap-4 flex flex-col font-normal text-[14px]">
               <li>
                 Look out for an email from our online platform from 9 January
                 2023
@@ -156,7 +134,7 @@ export const FinalPart = () => {
                   </li>
                 </ul>
               </li>
-              <li className="md:w-[600px]">
+              <li className=" md:w-4/5">
                 Your stay: In partnership with HotelMap, we've secured
                 <a href="#" className="underline">
                   {" "}
@@ -164,7 +142,7 @@ export const FinalPart = () => {
                 </a>{" "}
                 at a selection of hotels in Dubai, find your hotel today
               </li>
-              <li className="md:w-[600px]">
+              <li className=" md:w-4/5">
                 Share, attend and win: Let your network know you are attending
                 #ArabHealth23 and get a chance to win a pass for 2 at the Museum
                 of the Future.{" "}
@@ -182,7 +160,7 @@ export const FinalPart = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-end mr-10 md:mr-20 mt-10">
+        <div className="flex justify-end mr-10 md:mr-20 my-10">
           <button
             onClick={submitHandle}
             className={`${

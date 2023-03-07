@@ -1,4 +1,4 @@
-import React, { Fragment, useContext , useEffect} from "react";
+import React, { Fragment, useContext, useEffect } from "react";
 import { myContextApi } from "../../ContextApi";
 
 export const PersonalInfo3 = () => {
@@ -91,24 +91,18 @@ export const PersonalInfo3 = () => {
     healthChild,
     infrastructureChild,
     state3,
-    one,
-    two,
-    three,
-    four,
-    five,
-    six,
   } = useContext(myContextApi);
 
   useEffect(() => {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    },[state3]);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, [state3]);
 
   return (
     <div className="w-4/4">
       <form onSubmit={handleDefault}>
         {" "}
         <div>
-          <div className="flex justify-end  mr-5 md:mr-20 mt-10 mb-10">
+          <div className="flex justify-end  mr-5 md:mr-10 mt-10 mb-10">
             <p className="border-b-8 rounded-l-full border-gray-700 w-[90px] md:w-[180px]"></p>
             <p className="border-b-8 rounded-r-full border-gray-300 w-[60px]  md:w-[120px]"></p>
             <p className="hidden md:flex absolute mt-[-20px] font-extrabold text-[2rem] mr-80">
@@ -116,17 +110,17 @@ export const PersonalInfo3 = () => {
               60%
             </p>
           </div>
-          <h1 className="w-3/4 md:w-auto font-bold  md:text-lg text-gray-600 ml-5 md:ml-20 mt-20">
+          <h1 className="w-3/4 md:w-auto font-bold  md:text-lg text-gray-600 ml-5 md:ml-10 mt-20">
             Personalize your Arab Health 2023 journey
           </h1>
-          <p className="w-4/5 mt-4 text-[14px] md:w-[700px] font-normal ml-5 md:ml-20">
+          <p className="w-4/5 mt-4 text-[14px] md:w-4/5 font-normal ml-5 md:ml-10">
             Tell us a bit more about what you are interested in and what you are
             hoping to achieve at the event so we can tailor your experience
           </p>
-          <p className=" mt-10 font-bold text-[15px] ml-5 md:ml-20">
+          <p className=" mt-10 font-bold text-[15px] ml-5 md:ml-10">
             Reason for attending *
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[100px]  gap-y-5 ml-5 md:mx-20 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20  gap-y-5 ml-5 md:mx-10 mt-10">
             <div className="gap-5 flex items-center text-[13px] font-medium tracking-wide">
               <input
                 type="checkbox"
@@ -135,7 +129,10 @@ export const PersonalInfo3 = () => {
                 className="w-5 h-5 md:w-4 md:h-4 "
                 onChange={CheckOut1}
               />{" "}
-              Attend CME accredited conferences (paid)
+              <span className="w-4/5">
+                {" "}
+                Attend CME accredited conferences (paid)
+              </span>
             </div>
             <div className="gap-5 flex items-center text-[13px] font-medium tracking-wide">
               <input
@@ -145,7 +142,7 @@ export const PersonalInfo3 = () => {
                 onChange={CheckOut4}
                 className="w-5 h-5 md:w-4 md:h-4"
               />{" "}
-              Purchase new products and services
+              <span className="w-4/5"> Purchase new products and services</span>
             </div>
             <div className="gap-5 flex items-center text-[13px] font-medium tracking-wide">
               <input
@@ -155,7 +152,9 @@ export const PersonalInfo3 = () => {
                 onChange={CheckOut2}
                 className="w-5 h-5 md:w-4 md:h-4"
               />{" "}
-              Keep up-to-date with new products/trends
+              <span className="w-4/5">
+                Keep up-to-date with new products/trends
+              </span>
             </div>
             <div className="gap-5 flex items-center text-[13px] font-medium tracking-wide">
               <input
@@ -165,7 +164,10 @@ export const PersonalInfo3 = () => {
                 onChange={CheckOut3}
                 className="w-5 h-5 md:w-4 md:h-4"
               />{" "}
-              Attend workshops / training sessions
+              <span className="w-4/5">
+                {" "}
+                Attend workshops / training sessions
+              </span>
             </div>
             <div className="gap-5 flex items-center text-[13px] font-medium tracking-wide">
               <input
@@ -175,10 +177,10 @@ export const PersonalInfo3 = () => {
                 onChange={CheckOut5}
                 className="w-5 h-5 md:w-4 md:h-4 p-0 "
               />{" "}
-              <p className="md:absolute w-80  md:ml-8 mt-5 ">
+              <span className="w-4/5">
                 Strengthen my relationship with my existing suppliers or
                 partners
-              </p>
+              </span>
             </div>
             <div className="gap-5 flex items-center text-[13px] font-medium tracking-wide">
               <input
@@ -188,10 +190,13 @@ export const PersonalInfo3 = () => {
                 onChange={CheckOut6}
                 className="w-5 h-5 md:w-4 md:h-4 "
               />{" "}
-              Find new business partners and suppliers
+              <span className="w-4/5">
+                {" "}
+                Find new business partners and suppliers
+              </span>
             </div>
           </div>
-          <div className="w-4/5 md:w-2/4 ml-5 md:ml-[80px]">
+          <div className="w-4/5 md:w-2/4 ml-5 md:ml-20">
             {inputs.four && (
               <div className="mt-[50px]">
                 <p className="font-bold text-[14px] my-5">
@@ -316,10 +321,10 @@ export const PersonalInfo3 = () => {
           </div>
           {inputs.two && (
             <Fragment>
-              <p className="font-bold text-[14px] mt-[50px] ml-10 w-4/5 md:w-auto  md:ml-[80px] ">
+              <p className="font-bold text-[14px] mt-[50px] ml-10 w-4/5 md:w-5/4 ">
                 Which type of companies are you looking to meet at the show?
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-40 ml-5 mt-5 md:ml-[80px] gap-y-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[20%] ml-5 mt-5 md:ml-[80px] gap-y-3">
                 {subCheckBox3.map((department) => (
                   <Fragment key={department.id}>
                     <div className="flex  items-center gap-5">
@@ -330,7 +335,7 @@ export const PersonalInfo3 = () => {
                         onChange={twoHandler}
                         name="companyChoice2"
                       />
-                      <p className="font-medium text-[13px]">
+                      <p className="font-medium text-[13px] w-3/5">
                         {department.name}
                       </p>
                     </div>
@@ -344,7 +349,7 @@ export const PersonalInfo3 = () => {
               <p className="font-bold text-[14px] mt-[50px] ml-10 w-4/5 md:w-auto  md:ml-[80px] ">
                 Which type of companies are you looking to meet at the show?
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-40  ml-5 mt-5 md:ml-[80px] gap-y-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[20%]  ml-5 mt-5 md:ml-[80px] gap-y-3">
                 {subCheckBox3.map((department) => (
                   <Fragment key={department.id}>
                     <div className="flex  items-center gap-5">
@@ -355,7 +360,7 @@ export const PersonalInfo3 = () => {
                         onChange={sixHandler}
                         name="companyChoice"
                       />
-                      <p className="font-medium text-[13px]">
+                      <p className="font-medium text-[13px] w-3/5">
                         {department.name}
                       </p>
                     </div>
@@ -370,7 +375,7 @@ export const PersonalInfo3 = () => {
                 <p className="font-bold text-[14px] mt-[50px] ml-10 w-4/5 md:w-auto  md:ml-[80px] ">
                   Which type of companies are you looking to meet at the show?
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-40 ml-5 mt-5 md:ml-[80px] gap-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[20%] ml-5 mt-5 md:ml-[80px] gap-y-3">
                   {subCheckBox3.map((department) => (
                     <Fragment key={department.id}>
                       <div className="flex  items-center gap-5">
@@ -381,7 +386,7 @@ export const PersonalInfo3 = () => {
                           onChange={fiveHandler}
                           name="companyChoice3"
                         />
-                        <p className="font-medium text-[13px]">
+                        <p className="font-medium text-[13px] w-3/5">
                           {department.name}
                         </p>
                       </div>
@@ -398,7 +403,7 @@ export const PersonalInfo3 = () => {
               applicable *
             </h1>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[100px] ml-5  gap-y-5 md:mx-20 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-20 ml-5  gap-y-5 md:mx-10 mt-10">
             <div className="gap-5 flex items-center text-[13px] font-medium tracking-wide">
               <input
                 type="checkbox"
@@ -418,7 +423,7 @@ export const PersonalInfo3 = () => {
                 onChange={check2}
                 className="w-5 h-5 md:w-4 md:h-4 "
               />{" "}
-              Healthcare & General Services
+              <span className="w-4/5">Healthcare & General Services</span>
             </div>
             <div className="gap-5 flex items-center text-[13px] font-medium tracking-wide">
               <input
@@ -482,7 +487,7 @@ export const PersonalInfo3 = () => {
               <p>Orthopedic Devices</p>
             </div>
 
-            <div className="gap-5 flex items-center text-[13px] font-medium tracking-wide">
+            <div className="gap-5 flex items-center  text-[13px] font-medium tracking-wide">
               <input
                 type="checkbox"
                 name="box10"
@@ -490,7 +495,9 @@ export const PersonalInfo3 = () => {
                 onChange={check2}
                 className="w-5 h-5 md:w-4 md:h-4"
               />{" "}
-              Physiotherapy/Rehabilitation/Mobility{" "}
+              <label className="w-4/5">
+                Physiotherapy/Rehabilitation/Mobility{" "}
+              </label>
             </div>
           </div>
           {inputs.box1 && (
