@@ -163,11 +163,8 @@ const Conference = () => {
                 How would medical tourism impact on Nigeria’s Healthcare System
               </li>
               <li>
-                Robotic Surgery: role, structure and impacts in Nigeria’s
-                healthcare
-              </li>
-              <li>
-                Stem cell management & impacts on Nigeria Healthcare Services
+                Modern medical technologies & innovations for development of
+                medical tourism
               </li>
               <li>
                 The role of international organization in Africa Healthcare
