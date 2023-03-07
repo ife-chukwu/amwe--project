@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { myContextApi } from "../ContextApi";
 const Registration = () => {
 
@@ -26,6 +26,10 @@ const Registration = () => {
     phone,
     country,
   } = useContext(myContextApi);
+
+   useEffect(() => {
+     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+   }, [state1]);
   return (
     <div className="relative mt-32 md:mt-0 w-full">
       <Link
@@ -102,7 +106,7 @@ const Registration = () => {
                 <li>Workshops and product launches on the show floor</li>
                 <li>
                   FREE online tool to explore products and companies to set up
-                  meetings in advance of the live show days (available from 30
+                  meetings in advance of the live show days (available from 30th
                   August 2023)
                 </li>
               </ul>
