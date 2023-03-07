@@ -421,11 +421,11 @@ export const PersonalInfo = () => {
                 </p>
               </div>
 
-              <div className="md:flex md:justify-center">
+              <div className="md:ml-5 md:flex md:justify-center">
                 <div className="grid mt-10 grid-cols-1  md:mb-5 md:grid-cols-2 md:gap-x-20 lg:gap-x-40 md:mx-5">
                   {checkBox.map((box) => (
                     <Fragment key={box.id}>
-                      <div className=" mb-5  ">
+                      <div className="mb-5">
                         {" "}
                         <div className="flex items-center  gap-5">
                           <input
@@ -434,9 +434,9 @@ export const PersonalInfo = () => {
                             onChange={handleChange9}
                             value={box.name}
                             ref={disable9}
-                            className="border-black border-5 md:w-5 md:h-5 h-6 w-6 md:mr-[10%]"
+                            className="border-black border-5 md:w-5 md:h-5 h-6 w-6"
                           />
-                          <p className="w-3/5">{box.name}</p>
+                          <p className="w-full">{box.name}</p>
                         </div>
                       </div>
                     </Fragment>
