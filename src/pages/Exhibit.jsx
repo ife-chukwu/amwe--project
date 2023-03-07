@@ -111,7 +111,7 @@ const Exhibit = () => {
       </section>
       <section className="my-20">
         <h1 className="text-2xl md:text-3xl font-semibold font-serif text-center text-[#0F2F63]">
-          WHY EXHIBIT WITH US?
+          WHY TO TAKE PART IN?
         </h1>
         <div className="mt-16 flex flex-col gap-10">
           <div className="flex flex-col md:flex-row gap-5 md:gap-0 justify-around items-center border-b-2 border-[#0F2F63]  pb-5">
@@ -124,8 +124,8 @@ const Exhibit = () => {
                 huge emerging market. Discover more to harness your professions,
                 fulfill your purpose and achieve huge return on investment.
               </p>
-              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5"><Link to="/bookStand">
-                Book a stand</Link>
+              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5">
+                <Link to="/bookStand">Book a stand</Link>
               </button>
             </div>
             <figure
@@ -151,8 +151,8 @@ const Exhibit = () => {
                 opportunity to connect with the world and network with your
                 target audience and potential clients.
               </p>
-              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5"><Link to="/bookStand">
-                Book a stand</Link>
+              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5">
+                <Link to="/bookStand">Book a stand</Link>
               </button>
             </div>
             <figure
@@ -179,8 +179,8 @@ const Exhibit = () => {
                 Therefore, you get to grow on a global scale, the status of your
                 business/businesses.
               </p>
-              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5"><Link to="/bookStand">
-                Book a stand</Link>
+              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5">
+                <Link to="/bookStand">Book a stand</Link>
               </button>
             </div>
             <figure
@@ -207,8 +207,8 @@ const Exhibit = () => {
                 technologies will be on display to help keep you informed and
                 updated with latest practices globally.
               </p>
-              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5"><Link to="/bookStand">
-                Book a stand</Link>
+              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5">
+                <Link to="/bookStand">Book a stand</Link>
               </button>
             </div>
             <figure
@@ -234,8 +234,8 @@ const Exhibit = () => {
                 to explore, build strong and lasting relationship for high
                 engagement with brands.
               </p>
-              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5"><Link to="/bookStand">
-                Book a stand</Link>
+              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5">
+                <Link to="/bookStand">Book a stand</Link>
               </button>
             </div>
             <figure
@@ -261,8 +261,8 @@ const Exhibit = () => {
                 things, and proffer exceptionality, effective and sustainable
                 healthcare solution.
               </p>
-              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5"><Link to="/bookStand">
-                Book a stand</Link>
+              <button className="bg-[#0F2F63] p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5">
+                <Link to="/bookStand">Book a stand</Link>
               </button>
             </div>
             <figure
@@ -331,15 +331,15 @@ const Exhibit = () => {
                 tourism tie between Africa and the rest of the world.
               </p>
             </div>
-            <button className="bg-[#0F2F63] w-full md:w-2/3 p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5"><Link to="/bookStand">
-              Book a stand</Link>
+            <button className="bg-[#0F2F63] w-full md:w-2/3 p-2 text-gray-200 hover:bg-red-800 hover:text-white hover:translate-x-1 transition-all duration-500 rounded-lg my-5">
+              <Link to="/bookStand">Book a stand</Link>
             </button>
           </div>
         </div>
       </section>
       <div className="md:w-2/3 relative m-auto">
         <h1 className="text-2xl font-bold text-[#0F2F63] text-center my-10">
-          WHO TO EXHIBIT TO?
+          WHO PARTICIPATE?
         </h1>
         <div className="flex flex-col items-center w-full">
           <p className="font-bold tracking-wider border-t-4 border-red-500 bg-[#0F2F63] p-10 text-gray-200 rounded-t-full">
