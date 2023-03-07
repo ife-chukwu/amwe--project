@@ -23,8 +23,8 @@ export const Demographic = () => {
   return (
     <div className="overflow-hidden">
       <form onSubmit={handleDefault}>
-        <div className="md:ml-40">
-          <div className="flex justify-end  mt-10 mr-10 md:mr-20 mb-10">
+        <div className="">
+          <div className="flex justify-end  mt-10 mr-10 md:mr-10 mb-10">
             <p className="border-b-8 rounded-l-full border-gray-700 w-[65px] md:w-[130px]"></p>
             <p className="border-b-8 rounded-r-full border-gray-300 w-[85px] md:w-[170px]"></p>
             <p className="absolute mt-[-20px] font-extrabold text-[2rem] md:flex hidden mr-[300px]">
@@ -32,17 +32,15 @@ export const Demographic = () => {
               40%
             </p>
           </div>
-          <h1 className="ml-10 md:ml-0  font-bold text-lg">
-            Demographic information
-          </h1>
-          <p className=" ml-10 md:ml-0 w-4/5 md:w-[670px]  text-[14px] mt-5 font-normal">
+          <h1 className="ml-10  font-bold text-xl">Demographic information</h1>
+          <p className=" ml-10  w-4/5 md:w-4/5  text-lg mt-5 md:mt-10  md:mb-10 font-normal">
             Responding to the below questions as accurately as possible allows
             us to match you to the right content, products, companies and
             potential business contacts.
           </p>
           <div className="mt-10">
-            <div className="flex flex-col md:flex md:flex-row md:gap-10 gap-2  items-center mb-5 ">
-              <label className="md:ml-[-45px] text-[15px] md:text-[17px] font-semibold md:font-bold">
+            <div className="flex flex-col md:flex md:flex-row md:gap-10 gap-2 md:justify-center md:mx-5  items-center mb-5 ">
+              <label className=" text-[17px] md:text-[17px] font-semibold md:font-bold">
                 What is your company size? *
               </label>{" "}
               <select
@@ -65,8 +63,8 @@ export const Demographic = () => {
             <p className="flex justify-center w-[280px] ml-10 mb-5 mt-[-10px] md:ml-[300px]  text-[red]">
               {valid14}
             </p>
-            <div className="flex flex-col md:flex md:flex-row md:gap-10 gap-2 ml-2 items-center mb-5 ">
-              <label className=" text-[15px] md:ml-[-16px] font-semibold md:font-bold">
+            <div className="flex flex-col md:flex md:flex-row md:gap-10 gap-2 ml-2 md:justify-center md:mx-5   items-center mb-5 ">
+              <label className=" text-[17px] font-semibold md:font-bold">
                 What is your job function? *
               </label>{" "}
               <select
@@ -136,8 +134,8 @@ export const Demographic = () => {
             <p className="flex justify-center md:ml-[-100px] ml-5 mb-5 md:mt-[-10px]  mt-[-10px] text-[red]">
               {valid15}
             </p>
-            <div className="flex flex-col md:flex md:flex-row md:gap-10 gap-2  items-center mb-5 ">
-              <label className="text-[15px] md:ml-[-10px] font-semibold md:font-bold">
+            <div className="flex flex-col md:flex md:flex-row md:gap-10 gap-2 md:justify-center md:mx-5 items-center mb-5 ">
+              <label className="text-[17px]  font-semibold md:font-bold">
                 What is you level seniority? *
               </label>{" "}
               <select
@@ -178,8 +176,6 @@ export const Demographic = () => {
             </div>
           </div>
         </div>
-
-     
       </form>
     </div>
   );

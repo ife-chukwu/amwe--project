@@ -11,7 +11,7 @@ export const TermsAndConditions = () => {
     <div className="overflow-hidden">
       <form onSubmit={handleDefault}>
         <div>
-          <div className="flex justify-end  mr-[30px] md:mr-[69px] mt-10 mb-10">
+          <div className="flex justify-end  mr-[30px] md:mr-10 mt-10 mb-10">
             <p className="border-b-8 rounded-l-full border-gray-700 w-[125px] md:w-[250px]"></p>
             <p className="border-b-8 rounded-r-full border-gray-300 w-[25px] md:w-[50px]"></p>
             <p className="absolute mt-[-20px] font-extrabold text-[2rem] mr-80 hidden md:flex">
@@ -19,11 +19,11 @@ export const TermsAndConditions = () => {
               80%
             </p>
           </div>
-          <div className="w-4/5  md:w-auto md:ml-[100px] mx-5">
-            <h1 className="  md:ml-auto font-semibold text-[14px] mb-3">
+          <div className="w-4/5  ml-10 md:w-auto mx-5">
+            <h1 className="  md:ml-auto font-semibold md:text-lg mb-3">
               Attendee Terms & Conditions *
             </h1>{" "}
-            <div className="items-center flex gap-4 text-[14px] font-medium">
+            <div className="items-center flex gap-4 md:text-lg font-medium">
               <input
                 type="checkbox"
                 onChange={handleTermsChange}
@@ -38,17 +38,17 @@ export const TermsAndConditions = () => {
                 </a>
               </p>
             </div>
-            <p className="font-semibold text-[14px] my-5  md:ml-0">
+            <p className="font-semibold text-[14px] my-5 md:ml-0 md:text-lg">
               Privacy Terms
             </p>
-            <p className="md:w-[800px] ml-5 md:ml-0  font-normal text-[13px]">
+            <p className="md:w-4/5 ml-5 md:ml-0  font-normal md:text-lg">
               By continuing to register, you accept that Arab Health 2023, may
               contact you with updates, relevant promotions and information
               about future events provided by Informa Markets. Your details may
               be shared with the event sponsors, who may contact you about their
               products and services. *
             </p>
-            <div className="flex items-center gap-4 my-5 text-[14px] font-medium">
+            <div className="flex items-center gap-4 my-5 md:text-lg font-medium">
               <input
                 type="checkbox"
                 onChange={handleTermsChange}
@@ -67,8 +67,8 @@ export const TermsAndConditions = () => {
                 </a>
               </p>
             </div>
-            <p className="text-[14px] font-medium">Privacy Notice</p>
-            <p className="ml-5 md:ml-0 md:w-[800px] my-5 font-normal text-[13px]">
+            <p className=" font-medium md:text-lg">Privacy Notice</p>
+            <p className="ml-5 md:ml-0 md:w-4/5 my-5 font-normal md:text-lg">
               When attending our live/in-person events, by scanning a sponsored
               QR code or by allowing your badge to be scanned by an exhibitor or
               sponsor, or by allowing your badge to be scanned during a
@@ -81,7 +81,7 @@ export const TermsAndConditions = () => {
               with exhibitors and sponsors. You have the right to refuse badge
               scanning except when entering Arab Health 2023.{" "}
             </p>
-            <p className="ml-5 md:ml-0  md:w-[800px] my-5  font-normal text-[13px]">
+            <p className="ml-5 md:ml-0  md:w-4/5  my-5  font-normal md:text-lg">
               When attending our online events, if you accept a
               connection/meeting request or exchange messages in the chat, your
               personal information will be shared with the exhibitor to allow
@@ -99,11 +99,11 @@ export const TermsAndConditions = () => {
                 value="I have read and understood the Event Data Sharing Privacy Notice"
                 className="w-5 h-5 md:w-5 md:h-5"
               />{" "}
-              <p className="w-4/5 md:ml-0 text-[14px] font-medium">
+              <p className="w-4/5 md:text-lg font-medium">
                 I have read and understood the Event Data Sharing Privacy Notice
               </p>
             </div>
-            <p className="ml-5 md:ml-0 md:w-[800px]  italic font-normal text-[13px]">
+            <p className="ml-5 md:ml-0 md:w-4/5   italic font-normal md:text-lg">
               You can opt out of hearing from us at any time by clicking the
               unsubscribe link in our emails or contacting us. To understand how
               we use your data, please see our{" "}
