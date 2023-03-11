@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import BookStand from "./pages/BookStand";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import OurTeam from "./pages/OurTeam";
 import Reps from "./pages/Reps";
 import RepsDetails from "./pages/RepsDetails";
 import WelcomeMessage from "./pages/WelcomeMessage";
@@ -33,6 +34,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="aboutUs" element={<AboutUs />} />
         <Route path="bookStand" element={<BookStand />} />
+        <Route path="ourTeam" element={<OurTeam />} />
         <Route path="reps" element={<Reps />} />
         <Route path="reps/:repsDetails" element={<RepsDetails />} />
         <Route path="vissionMission" element={<VisionMission />} />
