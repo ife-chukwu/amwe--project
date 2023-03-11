@@ -96,21 +96,21 @@ const BookStand = () => {
   };
   const formSubmit = (e) => {
     e.preventDefault();
-    // emailjs
-    //   .send(
-    //     "service_nbmp34k",
-    //     "template_ynvioaq",
-    //     standFormInputs,
-    //     "33iZznqtTjQY9gfeI"
-    //   )
-    //   .then(
-    //     function (response) {
-    //       console.log("SUCCESS!", response.status, response.text);
-    //     },
-    //     function (error) {
-    //       console.log("FAILED...", error);
-    //     }
-    // );
+    emailjs
+      .send(
+        "service_nbmp34k",
+        "template_ynvioaq",
+        standFormInputs,
+        "33iZznqtTjQY9gfeI"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+    );
        setIsFormSubmitted(true);
 
   };
