@@ -80,7 +80,7 @@ const Header = () => {
                 <button>About</button>
                 {hoverLinks.hoverAbout && (
                   <div
-                    className="flex flex-col bg-gray-200 absolute p-2 mt-2 rounded-b text-gray-800 ml-20 md:-ml-3"
+                    className="flex flex-col bg-gray-200 absolute p-2 mt-2 rounded-b text-gray-800 ml-20 md:-ml-3 "
                     data-aos="fade-down"
                   >
                     <Link

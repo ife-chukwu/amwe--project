@@ -24,7 +24,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div className="md:p-10 py-10 px-5 relative md:mt-10  mt-32 md:w-2/3 m-auto">
+    <div className="md:p-10 py-10 px-5 relative md:mt-10  mt-32 md:w-3/4 m-auto">
       <h1 className="md:text-2xl mb-5 font-bold text-center text-xl text-[#0F2F63]">
         ABOUT ALL-AFRICA MEDICAL AND WELLNESS EXPO (AMWE)
       </h1>
