@@ -9,6 +9,9 @@ import Sampson from "../images/theTeam/Sampson-Yakubu.jpeg";
 import Victor from "../images/theTeam/Victor-Audu.jpeg";
 import Yakubu from "../images/theTeam/Yakubu-Ugbede.jpeg";
 import Yunusa from "../images/theTeam/Yunusa-Abdulganiyu.jpeg";
+import Lawal from "../images/theTeam/Lawal-Muhammed.jpeg";
+import Bassey from "../images/theTeam/Bassey-Mary-Kate.jpeg";
+import Ifeanyi from "../images/theTeam/Ifeanyi-Onyeka.jpeg";
 
 const OurTeam = () => {
   const teamData = [
@@ -57,6 +60,22 @@ const OurTeam = () => {
       role: "Sales Representative",
       image: Esther,
     },
+    {
+      name: "Lawal Nasirdeen Muhammed",
+      role: "Brand Manager",
+      image: Lawal,
+    },
+    {
+      name: "Bassey Mary-Kate",
+      role: "Travels and Tours Manager",
+      image: Bassey,
+    },
+    {
+      name: "Ifeanyi Onyeka",
+      role: "ICT Expert",
+      image: Ifeanyi,
+      link: "https://flyt.netlify.app/",
+    },
   ];
 
   useEffect(() => {
@@ -76,13 +95,25 @@ const OurTeam = () => {
       </div>
       <div className="md:grid grid-cols-2 gap-10 md:gap-5 mt-4">
         {teamData.map((members, index) => {
-            return <div key={index} className="p-2 shadow-lg rounded-lg mt-4">
-                <figure className="h-[300px] md:h-[350px]">
-                    <img src={members.image} alt="" className="w-full h-full rounded-lg"/>
-                </figure>
-                <figcaption className="font-bold text-center text-lg">{members.name}</figcaption>
-                <figcaption className="text-center text-sm">{ members.role}</figcaption>
-          </div>;
+          return (
+            <div key={index} className="p-2 shadow-lg rounded-lg mt-4">
+              <figure className="h-[350px] md:h-[350px]">
+                <a href={members.link ? members.link : null} target="_blank">
+                  <img
+                    src={members.image}
+                    alt=""
+                    className="w-full h-full rounded-lg"
+                  />
+                </a>
+              </figure>
+              <figcaption className="font-bold text-center text-lg">
+                {members.name}
+              </figcaption>
+              <figcaption className="text-center text-sm">
+                {members.role}
+              </figcaption>
+            </div>
+          );
         })}
       </div>
     </div>

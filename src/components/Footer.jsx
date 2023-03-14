@@ -16,12 +16,18 @@ const Footer = () => {
           <h1 className="text-xl md:border-b-2 md:border-red-500">
             EXHIBITION
           </h1>
-          <p><Link to="exhibit">Exhibits</Link></p>
-          <p><Link to="registration">Register</Link></p>
+          <p>
+            <Link to="exhibit">Exhibits</Link>
+          </p>
+          <p>
+            <Link to="registration">Register</Link>
+          </p>
           <p>Reviews</p>
         </div>
         <div className="shrink-0 flex flex-col gap-2 font-bold cursor-pointer">
-          <h1 className="text-xl md:border-b-2 md:border-red-500  md:text-center">CONTACTS</h1>
+          <h1 className="text-xl md:border-b-2 md:border-red-500  md:text-center">
+            CONTACTS
+          </h1>
           <p>
             <a href="tel:+2348063418882">Phone: +234 806 341 8882</a>
           </p>
@@ -58,6 +64,12 @@ const Footer = () => {
         </div>
         <h1 className="text-center w-full bg-gray-900 text-gray-200 py-2">
           Copyright &copy; 2023. All rights reserved. AMWE.
+          <br />
+          <span className="tracking-widest text-xs text-gray-700 underline">
+            <a href="https://flyt.netlify.app/" target="_blank">
+              Website created by Fly Technology
+            </a>
+          </span>
         </h1>
       </div>
     </div>
