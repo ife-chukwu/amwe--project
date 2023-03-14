@@ -42,11 +42,11 @@ export const TermsAndConditions = () => {
               Privacy Terms
             </p>
             <p className="md:w-4/5 ml-5 md:ml-0  font-normal md:text-lg">
-              By continuing to register, you accept that Arab Health 2023, may
-              contact you with updates, relevant promotions and information
-              about future events provided by Informa Markets. Your details may
-              be shared with the event sponsors, who may contact you about their
-              products and services. *
+              By continuing to register, you accept that All Medical and
+              Wellness Expo 2023, may contact you with updates, relevant
+              promotions and information about future events provided by Informa
+              Markets. Your details may be shared with the event sponsors, who
+              may contact you about their products and services. *
             </p>
             <div className="flex items-center gap-4 my-5 md:text-lg font-medium">
               <input
@@ -79,7 +79,7 @@ export const TermsAndConditions = () => {
               any time by contacting the exhibitor or sponsor. Badges cannot be
               read remotely and must be scanned before any details are shared
               with exhibitors and sponsors. You have the right to refuse badge
-              scanning except when entering Arab Health 2023.{" "}
+              scanning except when entering All Medical and Wellness Expo 2023.{" "}
             </p>
             <p className="ml-5 md:ml-0  md:w-4/5  my-5  font-normal md:text-lg">
               When attending our online events, if you accept a

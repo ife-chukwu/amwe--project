@@ -52,8 +52,6 @@ export const FinalPart = () => {
                 </p>
                 <p className="w-full flex mt-2 text-center font-bold justify-center">
                   Live in Person: 30th - 31th August
-                  <br />
-                  Dubai world trade center.
                 </p>
 
                 <p className="w-full flex mt-5 text-center font-medium text-md border-b justify-center">
@@ -112,17 +110,18 @@ export const FinalPart = () => {
               2023
             </h1>
             <p className=" md:w-4/5 font-semibold text-[14px] mt-5">
-              You are now confirmed to attend <strong>Arab Health 2023.</strong>
+              You are now confirmed to attend{" "}
+              <strong>All Medical and Wellness Expo 2023.</strong>
             </p>{" "}
             <p className="mt-5 text-[14px]">
               YOUR REGISTRATION KEY IS: 2jhi50ewnwllb
             </p>
             <p className={`${submit ? "hidden" : "absolute"} mt-5 text-[14px]`}>
-              How can you make the most of Arab Health?
+              How can you make the most of All Medical and Wellness Expo 2023?
             </p>
             <ul className="ml-10 w-3/4  md:w-4/5 md:ml-20 list-disc mt-[60px] gap-4 flex flex-col font-normal text-[14px]">
               <li>
-                Look out for an email from our online platform from 9 January
+                Look out for an email from our online platform from March
                 2023
                 <ul className="ml-10 list-decimal mt-2 font-normal">
                   <li>
@@ -140,23 +139,23 @@ export const FinalPart = () => {
                   {" "}
                   discounted hotel rates{" "}
                 </a>{" "}
-                at a selection of hotels in Dubai, find your hotel today
+                at a selection of hotels in Abuja, find your hotel today
               </li>
               <li className=" md:w-4/5">
                 Share, attend and win: Let your network know you are attending
-                #ArabHealth23 and get a chance to win a pass for 2 at the Museum
-                of the Future.{" "}
+                #All Medical and Wellness Expo 2023 and get a chance to win a
+                pass for 2 at the Museum of the Future.{" "}
                 <a href="#" className="underline">
                   Click here{" "}
                 </a>{" "}
-                to start Any queries, please send an email to ahmarketing@in
+                to start Any queries, please send an email to info@amwe.com.ng
               </li>
             </ul>
             <p className=" mt-10 text-[14px] font-medium">
               Any queries, please send an email to{" "}
               <a href="#" className="underline">
-                ahmarketing@informa.com.
-              </a>
+                info@amwe.com.ng{" "}
+                </a>
             </p>
           </div>
         </div>

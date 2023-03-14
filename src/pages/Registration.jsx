@@ -159,7 +159,7 @@ const Registration = () => {
                     !inputs.position
                       ? "bg-[#0a0a3e] cursor-not-allowed  opacity-70 text-gray-500"
                       : "bg-[#0a0a57]  cursor-pointer text-white"
-                  }    px-10  py-1 md:py-2 mr-10  lg:mr-40 md:mr-20  rounded-md  md:mb-10 font-bold`}
+                  }    px-10  py-1 md:py-2 mr-10  lg:mr-20 md:mr-20  rounded-md  md:mb-10 font-bold`}
                 >
                   Next
                 </button>
