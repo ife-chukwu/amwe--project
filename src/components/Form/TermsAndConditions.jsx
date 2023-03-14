@@ -103,7 +103,7 @@ export const TermsAndConditions = () => {
                 I have read and understood the Event Data Sharing Privacy Notice
               </p>
             </div>
-            <p className="ml-5 md:ml-0 md:w-4/5   italic font-normal md:text-lg">
+            <p className="ml-5 md:ml-0 md:w-4/5 pb-10  italic font-normal md:text-lg">
               You can opt out of hearing from us at any time by clicking the
               unsubscribe link in our emails or contacting us. To understand how
               we use your data, please see our{" "}
