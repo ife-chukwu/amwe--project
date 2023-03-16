@@ -45,9 +45,9 @@ export const PersonalInfo = () => {
     position,
   } = useContext(myContextApi);
 
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, left: 0 , behavior: "smooth" });
-  // }, [state]);
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 , behavior: "smooth" });
+  }, [state]);
 
   const checkBox = [
     {

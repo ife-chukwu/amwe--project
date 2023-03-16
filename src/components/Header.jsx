@@ -24,35 +24,33 @@ const Header = () => {
   } = useContext(myContextApi);
   return (
     <div className="top-0 z-50 fixed md:relative w-full">
-      <div className="flex justify-between md:justify-around shadow-md md:flex md:items-center md:w-full md:z-20 md:px-5 bg-slate-100">
+      <div className="flex justify-between shadow-md md:items-center md:w-full md:z-20 md:px-5 bg-slate-100">
         <figure
           className={`${
             showNavlinks ? "hidden" : "flex"
-          } md:flex md:flex-col items-center md:w-[20%] w-full gap-2 md:gap-1 md:h-100px m-5 md:mr-5 md:mt-2 md:ml-2 relative`}
+          } md:flex items-center md:w-auto w-full gap-2 md:h-100px m-5 md:mr-5 md:mt-2 md:ml-2 relative`}
         >
           <img
             src="favicon.png"
             alt="AMWE Official Logo"
-            className="w-[20%] md:w-[30%] md:h-full shadow-lg"
+            className="w-[22%] md:w-[20%] md:h-full shadow-lg"
           />
           <figcaption
-            className="w-[250px] md:w-auto p-1 md:h-auto md:font-normal md:p-1  md:block md:outline md:outline-offset-2 text-[8px] text-center leading-tight mt-1 bg-red-500 text-gray-200 rounded overflow-hidden"
+            className="w-[250px] md:w-auto md:h-auto md:font-normal md:p-1  md:block text-base font-bold text-center leading-tight mt-1  text-[#0F2F63] rounded overflow-hidden"
             data-aos="flip-up"
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            All Africa Medical & Wellness Expo <hr />{" "}
-            <i className="text-[8px]">
-              Where the world decides the future of healthcare
-            </i>
+            ALL AFRICA MEDICAL & <hr className="bg-red-500 h-1" />{" "}
+            <i className="font-bold text-base">WELLNESS EXPO </i>
           </figcaption>
         </figure>
 
-        <div className="w-full md:w-[70%] relative">
+        <div className={`w-full relative flex items-center justify-center ${showNavlinks? 'h-screen' : 'h-auto'} md:h-auto`}>
           {!showNavlinks && (
-            <figure className="md:hidden relative float-right mr-5 mt-6  ">
+            <figure className="md:hidden relative float-right">
               <GiHamburgerMenu
-                size={40}
+                size={30}
                 className="text-[#0F2F63] text-2xl md:hidden border shadow-lg rounded"
                 onClick={toggleNavlinks}
               />
@@ -61,12 +59,12 @@ const Header = () => {
           <nav
             className={`${
               showNavlinks ? "flex" : "hidden"
-            } z-50 justify-between py-3 px-8 md:px-2 h-screen md:w-full md:h-12 md:rounded bg-[#0F2F63] md:flex absolute animate__animated
+            } z-50 justify-between py-3 px-8 md:px-2 h-screen w-full md:h-12 md:rounded bg-[#0F2F63] md:flex absolute animate__animated
             animate__slideInRight
             animate__fadeIn`}
             onMouseLeave={toggleLinksFalse}
           >
-            <div className="flex md:flex-row flex-col md:gap-5 gap-5  md:w-full w-[330px] mt-5 md:mt-0">
+            <div className="flex md:flex-row flex-col md:gap-5 gap-5 w-full mt-5 md:mt-0">
               <div
                 className="md:w-1/5 w-[80%] pb-1 md:pb-0 text-gray-200 md:text-center border-b border-red-500 md:border-none"
                 onMouseEnter={toggleLinksFalse}
@@ -82,7 +80,7 @@ const Header = () => {
                 <button>About</button>
                 {hoverLinks.hoverAbout && (
                   <div
-                    className="flex flex-col bg-gray-200 absolute p-2 mt-2 rounded-b text-gray-800 ml-20 md:-ml-3"
+                    className="flex flex-col bg-gray-200 absolute p-2 mt-2 rounded-b text-gray-800 ml-20 md:-ml-3 "
                     data-aos="fade-down"
                   >
                     <Link
@@ -107,7 +105,7 @@ const Header = () => {
                       Welcome Message
                     </Link>
                     <Link
-                      to="#"
+                      to="ourTeam"
                       className="hover:border-b-2 transition-all duration-300 py-1 border-red-500  md:border-b-0 border-b pb-1"
                       onClick={toggleNavlinks}
                     >
@@ -275,7 +273,7 @@ const Header = () => {
               </div>
             </div>
 
-            <figure>
+            <figure className="">
               <AiOutlineClose
                 className="text-gray-200 text-2xl md:hidden mt-5"
                 onClick={toggleNavlinks}

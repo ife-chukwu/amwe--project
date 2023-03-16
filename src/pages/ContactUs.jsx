@@ -73,8 +73,8 @@ const ContactUs = () => {
           <div>
             <h1 className="text-xl font-semibold">Get in touch</h1>
             <p>
-              We would love to hear from you. Our friendly team is alwas here to
-              chat!
+              We would like to hear from you. Our ever dynamic team are ready to
+              attend to you.
             </p>
           </div>
           <div className="flex gap-2 items-center">
@@ -83,7 +83,6 @@ const ContactUs = () => {
               <h1 className="font-bold text-lg underline">
                 <a href="mailto:info@amwe.com.ng">Send us a mail</a>
               </h1>
-              <p className="text-sm">Our friendly team is here to help</p>
               <i className="font-bold text-sm">
                 <a href="mailto:info@amwe.com.ng">info@amwe.com.ng</a>
               </i>
@@ -97,7 +96,6 @@ const ContactUs = () => {
                   Office Address
                 </a>
               </h1>
-              <p className="text-sm">Come say 'hello' at our office</p>
               <i className="font-bold text-sm">
                 <a href="https://www.google.com/maps/dir/9.1026712,7.448954/efab+mall+garki+area+11+google+map/@8.9206714,7.6241384,8.19z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x104e0b660a57fc4b:0xf7d6e88e02143540!2m2!1d7.5037303!2d9.0436293">
                   Exit E, 42 second floor, Efab Mall, block E extension, by the

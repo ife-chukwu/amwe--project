@@ -103,7 +103,6 @@ const Registration = () => {
                 <li>Thousands of products across 9 product sectors</li>
                 <li>Innovative sessions at the Transformation Zone</li>
                 <li>Workshops and product launches on the show floor</li>
-                <li>Workshops and product launches on the show floor</li>
                 <li>
                   FREE online tool to explore products and companies to set up
                   meetings in advance of the live show days (available from 30th
@@ -111,13 +110,7 @@ const Registration = () => {
                 </li>
               </ul>
 
-              <p className="mt-7 text-gray-600 md:w-full  mr-10">
-                Your visitor badge will be digital - available to you on our
-                website and will be emailed to you in the days before the
-                in-person event. Click the 'Register' button below to start your
-                FREE visitor journey to attend AMWE 2023 Event -{" "}
-                <strong>where the world of healthcare meets.</strong>
-              </p>
+             
               <ul className="mt-10 md:ml-[50px] gap-5 flex flex-col  -ml-[50px] mx-5 list-disc text-gray-600">
                 <li>
                   If you are an exhibiting staff member then contact your
